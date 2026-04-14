@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <module sourceSWF="elements/3dbrain/modules/brain.swf" label="Whole Brain"  moduleIndex="1" startingFrame="64" accessID="brain" moduleLevel="0">
+    <h1>The Whole Brain</h1>
+    <h2>Overview</h2>
+	<p>The brain is a remarkable structure that defines who we are as individuals and how we experience the world.  Recent advances in neuroimaging have allowed researchers to look inside the brain, providing vivid pictures of its subcomponents and their associated functions.  The gross structure of the brain is familiar to most.  The outer layer of the forebrain constitutes the familiar wrinkled tissue that is the cerebral cortex, or cortex for short.  The large folds in the cortex are called gyri (from the Greek, &#8216;circle&#8217;).  The small creases within these folds are fissures (from the Greek,  &#8216;trench&#8217;).  Each hemisphere of the cortex consists of four lobes—frontal, parietal, temporal, and occipital.  Other important structures are the brainstem, cerebellum the limbic system (which includes the amygdala and hippocampus).</p>
+	<p>The <i>G2C Brain</i> consists of 29 interactive structures that can be rotated in 3-D space.  Each structure contains information on associated functions, disorders, brain damage, case studies, and links to contemporary modern research.</p>
+    <h2>Case studies</h2>
+	<p>Perhaps the most well known-case study in neuroscience is Phineas Gage, who suffered severe damage to the prefrontal cortex following a railroad-related accident in 1848.  An explosion drove a large iron rod through Gage’s skull, and he was later reported to have severe social impairments.  Although the extent of these impairments remains controversial, his case study was a landmark in that it correlated specific cognitive functions with a specific brain area.  Since then, tens of thousands of case studies have sought to associate specific brain regions with specific functions, and many of these are documented in <i>G2C Brain</i> structures.  However, it is important not to overstate the point.  All cognitive functions result from the integration of many simple processing mechanisms, distributed throughout the brain.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>arousal</li>
+      <li>emotion</li>
+      <li>language</li>
+      <li>learning</li>
+      <li>memory</li>
+      <li>movement</li>
+      <li>perception</li>
+      <li>sensation</li>
+      <li>thinking</li>
+      <li>many others</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Almost without exception, cognitive disorders correlate to multiple regions in the brain.  Just as the genes and biochemicals associated with cognition are expressed throughout the brain, gross structures that correlate with cognitive disorders are widespread.  This is certainly true of the six disorders covered in <i>G2C Online</i>: ADHD, Alzheimer&#39;s autism, bipolar disorder, depression, and schizophrenia.</p>
+    <h2>Associated with damage</h2> 
+    <p>It is possible for the brain to repair damaged neural networks or to compensate for the loss of function in particular structures.  Common impairments resultants from brain damage include deficits in attention, emotion, language, learning, memory, movement, perception and sensation.</p>
+    <h2>Substructures</h2>
+	<ul>
+      <li>amygdala</li>
+      <li>basal ganglia</li>
+      <li>brainstem</li>
+      <li>Broca&#39;s area</li>
+      <li>cerebellum</li>
+      <li>cingulate cortex</li>
+      <li>corpus callosum</li>
+      <li>dentate gyrus</li>
+      <li>entorhinal cortex</li>
+      <li>frontal lobe</li>
+      <li>hippocampus</li>
+      <li>hypothalamus</li>
+      <li>inferior temporal gyrus</li>
+      <li>limbic system</li>
+      <li>medulla</li>
+      <li>middle temporal gyrus</li>
+      <li>occipital lobe</li>
+      <li>parietal lobe</li>
+      <li>perirhinal cortex</li>
+      <li>pons</li>
+      <li>prefrontal cortex</li>
+      <li>premotor cortex</li>
+      <li>primary motor cortex</li>
+      <li>somatosensory cortex</li>
+      <li>subiculum</li>
+      <li>superior temporal gyrus</li>
+      <li>temporal lobe</li>
+      <li>thalamus</li>
+      <li>ventricles</li>
+      <li>Wernicke&#39;s area</li>
+      <li>and many others</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15263907" target="_blank">Harrison and Weinberger</a> (2008) review schizophrenia by integrating research on genes, gene expression, and neuropathology (Pubmed ID number: 15263907).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15450156" target="_blank">Malenka and Bear</a> (2004) review the processes underlying long-term potentiation and long-term depression (Pubmed ID number: 15450156).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/12399581" target="_blank">Selkoe</a> (2002) reviews evidence that Alzheimer&#39;s disease begins with subtle alterations of synapses in the hippocampus, caused by assemblies of the amyloid beta protein (Pubmed ID number: 12399581).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15217342" target="_blank">Sudhof</a> (2004) reviews the synaptic vesicle cycle (Pubmed ID number: 15217342).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Brain" target="_blank">Medical Subject Headings</a> (MeSH)</li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=21" target="_blank">BrainInfo</a></li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/basalGanglia.swf" label="Basal Ganglia"  moduleIndex="6" startingFrame="64" accessID="basal_ganglia" moduleLevel="1">
+    <h1>The Basal Ganglia</h1>
+    <h2>Overview</h2>
+    <p>The basal ganglia comprise a group of structures that regulate the initiation of movements, balance, eye movements, and posture.  They are strongly connected to other motor areas in the brain and link the thalamus with the motor cortex.  The basal ganglia are also involved in cognitive and emotional behaviors and play an important role in reward and reinforcement, addictive behaviors and habit formation.</p>
+    <h2>Case Study</h2>
+    <p>A 2008 study by Das and colleagues that approximately 5% of apparently healthy middle&#x2013;aged adults have micro&#x2013;lesions in the basal ganglia. Known clinically as silent cerebral infarcts (SCI), these lesions have an overall prevalence of about 10% in seemingly healthy adults.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>movement regulation</li>
+      <li>skill learning</li>
+      <li>habit formation</li>
+      <li>reward systems</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>The basal ganglia are particularly associated with movement disorders such as Parkinson&apos;s and Huntington&apos;s disease. In terms of cognitive disorders, basal ganglia abnormalities have been found in individuals with schizophrenia, and may explain habit learning deficits associated with the disorder (Keri, 2008). The basal ganglia may also contribute the neuropathology of depression, particularly in relation to the limbic system (Stathis and colleagues, 2007).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>tremors</li>
+      <li>involuntary muscle movements</li>
+      <li>abnormal increase in muscle tone</li>
+      <li>difficulty initiating movement</li>
+      <li>abnormal posture</li>
+	</ul>
+    <h2>Substructures</h2>
+	<ul>
+      <li>caudate nucleus</li>
+      <li>globus pallidus</li>
+      <li>nucleus accumbens</li>
+      <li>putamen</li>
+      <li>substantia nigra</li>
+      <li>subthalamic nucleus</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18583555" target="_blank">Das and colleagues</a> (2008) examined neuroimaging data from over 2040 middle&#x2013;aged participant and found evidence of silent cerebral infarcts in 10.7% of the sample (PMID: 18583555).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17854895" target="_blank">Keri</a> (2008) includes the basal ganglia in a review on category&#x2013;learning deficits in schizophrenia (Pubmed ID number: 17854895).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18061261" target="_blank">Shohamy and colleagues</a> (2008) review the effects of behavioral, neuropsychological, neuroimaging, and computational studies of basal ganglia and dopamine contributions to category&#x2013;learning in humans (Pubmed ID number: 18061261).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17691350" target="_blank">Stathis and colleagues</a> (2007) review associations between the basal ganglia, limbic system, and cognitive disorders with an emphasis on neuromodulation (Pubmed ID number: 17691350).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18164481" target="_blank">Yu and Neimat</a> (2008) review the clinical effects of deep brain stimulation within the basal ganglia and thalamus in rehabilitating patients with movement disorders (Pubmed ID number: 18164481).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Basal%20Ganglia" target="_blank">Medical Subject Headings (MeSH)</a> organizational tree
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=224" target="_blank">BrainInfo</a> images</li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/brainStem.swf" label="Brain Stem"  moduleIndex="20" startingFrame="64" accessID="brainstem" moduleLevel="1">
+    <h1>The Brain Stem</h1>
+    <h2>Overview</h2>
+    <p>The brain stem consists of a group of structures that lie deep within the brain, including the pons, medulla oblongata, and midbrain. It plays an important role in maintaining homeostasis by controlling autonomic functions such as breathing, heart rate, and blood pressure. While the brain stem can organize motor movements such as reflexes, it coordinates with the motor cortex and associated areas to contribute to fine movements of limbs and the face.</p>
+    <h2>Case study</h2>
+    <p>Cattaneo and colleagues (2006) describe two patients with damage (stroke) to the brain stem who had considerable difficulty balancing and walking. In addition, both were afflicted with “pathological yawning”, which occurred at a frequency of every 2 to 3 minutes.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>maintaining homeostasis by controlling autonomic functions (including blood pressure, breathing, digestion, heart rate, perspiration and temperature)</li>
+      <li>alertness</li>
+      <li>sleep</li>
+      <li>balance</li>
+      <li>startle response</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Very few cognitive disorders have been associated with the brain stem. A number of studies have found brain stem abnormalities in individuals with autism (e.g. Rodier, 2003).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>maintaining homeostasis by controlling autonomic functions (including blood pressure, breathing, digestion, heart rate, perspiration and temperature)</li>
+      <li>organ failure sleep disorders (e.g. insomnia, sleep apnea)</li>
+      <li>difficulties balancing and moving</li>
+	</ul>
+    <h2>Substructures</h2>
+	<ul>
+      <li>medulla oblongata</li>
+      <li>midbrain</li>
+      <li>pons</li>
+      <li>maintaining homeostasis by controlling autonomic functions (including blood pressure, breathing, digestion, heart rate, perspiration and temperature)</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16174652" target="_blank">Cattaneo and colleagues</a> (2006) report two cases of pathological yawning following stroke damage to the brain stem (PMID: 16174652).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/12349873" target="_blank">Rodier</a> (2003) reviews evidence for brain stem injury in autism (PMID: 12349873).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Brain%20Stem" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=2052" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/pons.swf" label="Pons"  moduleIndex="21" startingFrame="64" accessID="pons" moduleLevel="2">
+    <h1>The Pons</h1>
+    <h2>Overview</h2>
+    <p>The pons is the region in the brain most closely associated with breathing and with circuits that generate respiratory rhythms. It forms a bridge between the cerebrum and cerebellum and is involved in motor control, posture, and balance. It is also involved in sensory analysis and is the site at which auditory information enters the brain.</p>
+    <h2>Case study</h2>
+    <p>During REM sleep, the body becomes paralyzed. This prevents us from acting&#x2013;out movements during sleep. Rapid eye movement sleep behavior disorder is characterized by a loss of paralysis, which can lead to disruptive behavior during sleep. Xi and Luning (2008) present a case study of a patient with a lesion in the pons that was accompanied by screaming, thrashing arms, punching, and kicking during violent and vivid dreams. He was successfully treated with anticonvulsants.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>regulating breathing, taste, and autonomic functions</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Very few cognitive disorders have been associated with the pons.</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>impaired breathing</li>
+      <li>deafness, paralysis</li>
+      <li>sleep disturbance</li>
+      <li>loss of taste (gustation)</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15519548" target="_blank">Alheid, Milsom, and McCrimmon</a> (2004) review the relationship between the pons and breathing (Pubmed ID number: 15519548).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/10496297" target="_blank">Hoshino and colleagues</a> (1999) present a case study of a patient with a loss of taste following pontine damage (Pubmed ID number: 10496297).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18226960" target="_blank">Xi and Luning</a> (2008) present a case study of a REM sleep behavior disorder in a 68 year&#x2013;old man with pontine stroke (Pubmed ID number: 18226960).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Pons" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=547" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/cerebellum.swf" label="Cerebellum"  moduleIndex="19" startingFrame="64" accessID="cerebellum" moduleLevel="1">
+    <h1>The Cerebellum</h1>
+    <h2>Overview</h2>
+    <p>The cerebellum monitors and regulates motor behavior, particularly automatic movements. Some recent studies have associated the cerebellum with cognitive functions, such as learning and attention. Although the cerebellum accounts for roughly 10% of total brain weight, it contains more neurons than the rest of the brain combined. The cerebellum is also one of the few mammalian brain structures where adult neurogenesis (the development of new neurons) has been confirmed.</p>
+    <h2>Case study</h2>
+    <p>The cerebellum is important to the timing of rhythmic movements. A recent neuroimaging study by Brown and colleagues (2006) examined the neural basis of dance and found evidence of cerebellar activity during entrainment (synchronizing timing and movement with musical rhythm).</p>
+    <h2> Associated functions </h2>
+	<ul>
+      <li>coordination of voluntary movement</li>
+      <li>motor&#x2013;learning</li>
+      <li>balance</li>
+      <li>reflex memory</li>
+      <li>posture</li>
+      <li>timing</li>
+      <li>sequence learning</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Individuals with autism sometimes walk with a clumsy gait, a phenomenon that has been linked to the cerebellum. Schizophrenia and dyslexia have also been associated with cerebellar dysfunction.</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>loss of fine coordination</li>
+      <li>tremor</li>
+      <li>inability to walk</li>
+      <li>dizziness (vertigo)</li>
+      <li>slurred speech</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16221923" target="_blank">Brown and colleagues</a> (2005) identify the cerebellum as a key component in the neural basis of dance (PMID: 16221923).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17925205" target="_blank">Glickstein</a> (2007) reviews the key functions of the cerebellum (PMID: 17925205).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17786823" target="_blank">Gowen and Miall</a> (2007) review the cerebellum&apos;s contribution to neuropsychiatric disorders including schizophrenia and dyslexia (PMID: 17786823).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18334535" target="_blank">Leggio and colleagues</a> (2008) report cognitive sequencing impairment in patients with cerebellar damage (PMID: 18334535).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16182941" target="_blank">Nayate and colleagues</a> (2005) examine the potential role for the cerebellum and basal ganglia in the neuropathology of autism and Asperger&apos;s disorder (PMID: 16182941).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18523645" target="_blank">Ponti, Peretto, and Bonfanti</a> (2008) report evidence of neuronal neurogenesis in the cerebellum of adult rabbits (PMID 18523645).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17454686" target="_blank">Richter and colleagues</a> (2007) find no evidence of cognitive impairment in patients with cerebellar lesions (PMID: 17454686).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Cerebellum" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=643" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/corpusCallosum.swf" label="Corpus Callosum"  moduleIndex="27" startingFrame="64" accessID="corpus_callosum" moduleLevel="1">
+    <h1>The Corpus Callosum</h1>
+    <h2>Overview</h2>
+    <p>The corpus callosum consists of a large bundle of fibers connecting the right and left hemispheres of the brain. Each hemisphere controls movement in the opposite (contralateral) side of the body and can also specialize in performing specific cognitive and perceptual functions. The corpus callosum allows information to move between hemispheres and is therefore a very important integrative structure.</p>
+    <h2>Case study</h2>
+    <p>In the 1960s, Michael Gazzaniga and Roger Wolcott Sperry performed a number of seminal neuropsychological experiments on individuals who had had the corpus callosum connecting the two hemispheres severed. This allowed the hemispheres to essentially be tested in isolation and confirmed left hemisphere specialization for language and right hemisphere for face recognition and attentional monitoring. Subsequent research with &quot;split&#x2013;brain&quot; patients controversially suggested that the left and right brains may even have separate and competing identities. For example, the left hemisphere may have a bias for recognizing self and the right for recognizing others (Turk and colleagues, 2002).</p>
+    <h2>Associated functions</h2>
+    <p>connects right and left hemispheres and allows information to pass between them</p>
+    <h2>Associated cognitive disorders</h2>
+    <p>Reductions in corpus callosum volume have been associated with schizophrenia and the onset of psychotic episodes. Abnormalities in corpus callosum morphology have also been observed in Alzheimer&apos;s patients, children with ADHD as well as in a large number of non&#x2013;cognitive disorders.</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>coma or vegetative state</li>
+      <li>mutism</li>
+      <li>memory impairments.</li>
+      <li>Split brain syndrome results in a number of subtle cognitive, movement and perceptual difficulties</li>
+	</ul>
+    <h2>Substructures</h2>
+	<ul>
+      <li>splenium</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16062172" target="_blank">Gazzaniga</a> (2005) reviews decades of research with split&#x2013;brain patients and highlights the importance of the corpus callosum in integrating information (Pubmed ID number: 16062172).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18603234" target="_blank">Glickstein and Berlucchi</a> (2008) review disconnection studies of the corpus callosum (Pubmed ID number: 18603234).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18444712" target="_blank">Hutchinson and colleagues</a> (2008) review evidence that children with ADHD may have a smaller splenium (part of the corpus callosum) than controls (Pubmed ID number: 18444712).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15083283" target="_blank">Tomimoto and colleagues</a> (2004) report an association between corpus callosum atrophy and Alzheimer&apos;s disease (Pubmed ID number: 15083283).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/12195428" target="_blank">Turk and colleagues</a> (2002) report dissociation between the left and right hemisphere for identifying self and familiar others (Pubmed ID number: 12195428).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16284771" target="_blank">Uchino and colleagues</a> (2006) review the diseases and conditions associated with lesions of the corpus callosum (Pubmed ID number: 16284771).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18562178" target="_blank">Walterfang and colleagues</a> (2008) show that reductions in the thickness of the anterior corpus callosum are predictive of a transition to psychosis in schizophrenic patients (Pubmed ID number: 18562178).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Corpus%20Callosum" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=191" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/frontalLobe.swf" label="Frontal Lobe"  moduleIndex="0" startingFrame="64" accessID="frontal_lobe" moduleLevel="1">
+    <h1>The Frontal Lobe</h1>
+    <h2>Overview</h2>
+    <p>The frontal lobes are part of the cerebral cortex and are the largest of the brain&apos;s structures. They are the main site of so&#x2013;called &apos;higher&apos; cognitive functions. The frontal lobes contain a number of important substructures, including the prefrontal cortex, orbitofrontal cortex, motor and premotor cortices, and Broca&apos;s area. These substructures are involved in attention and thought, voluntary movement, decision&#x2013;making, and language.</p>
+    <h2>Case study</h2>
+    <p>Although no longer a common practice, approximately 40,000 people in the United States have received prefrontal lobotomy to treat a variety of personality and cognitive disorders. This highly controversial practice involves destroying or severing the connections to the prefrontal cortex and often results in impaired voluntary behavior.</p>
+    <h2>Associated functions</h2>
+    <p>Executive processes (voluntary behavior such as decision making, planning, problem&#x2013;solving, and thinking), voluntary motor control, cognition, intelligence, attention, language processing and comprehension, and many others.</p>
+    <h2>Associated cognitive disorders</h2>
+    <p>The frontals lobes are the brain&apos;s largest structures and consequently have been associated with a large number of disorders. These include ADHD, schizophrenia, and bipolar disorder (prefrontal cortex).</p>
+    <h2> Associated with damage</h2>
+	<ul>
+      <li>Paralysis</li>
+      <li>Loss of spontaneity in social interactions</li>
+      <li>Mood changes</li>
+      <li>An inability to express language</li>
+      <li>Atypical social skills and personality traits</li>
+	</ul>
+    <h2>Substructures</h2>
+	<ul>
+      <li>Prefrontal cortex</li>
+      <li>Orbitofrontal cortex</li>
+      <li>Premotor cortex</li>
+      <li>Motor cortex</li>
+      <li>Broca&apos;s area</li>
+      <li>Frontal eye fields</li>
+      <li>Middle frontal gyrus</li>
+      <li>Inferior frontal gyrus</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17978025" target="_blank">Aron and colleagues</a> (2007) review evidence from a number of sources that a neural network consisting of neurons in the frontal lobes and basal ganglia is involved in inhibiting motor movements. This network may be impaired in ADHD (Pubmed ID number: 17978025).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17651888" target="_blank">Berger and colleagues</a> (2007) examine how the maturation of the frontal areas of the brain facilitates self&#x2013;regulation. This may have special relevance for ADHD (Pubmed ID number: 17651888).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17982567" target="_blank">Hon</a> (2007) reviews the part played by frontoparietal activity in arriving at cognition and the role of this activity in representing behaviorally relevant information (Pubmed ID number: 17982567).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17655784" target="_blank">Jung and Haier</a> (2007) review evidence for a parieto&#x2013;frontal integration theory of intelligence to examine the expression of intelligence and reason (Pubmed ID number: 17655784).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17786559" target="_blank">Jurado and Rosselli</a> (2007) review current research on executive functions such as goal&#x2013;directed plans, effective performance, and the ability to inhibit overlearned behavior (Pubmed ID number: 17786559).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Frontal%20Lobe" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=56" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/brocas.swf" label="Broca&#39;s Area"  moduleIndex="4" startingFrame="64" accessID="brocas_area" moduleLevel="2">
+    <h1>Broca&apos;s Area</h1>
+    <h2>Overview</h2>
+    <p>Broca&apos;s area is a functionally defined structure in the left frontal lobe of about 97% of humans (including a large majority of left&#x2013;handers). Broca&apos;s area is involved mainly in the production of spoken and written language and also in language processing and comprehension. It takes its name from the French scientist whose work with language&#x2013;impaired patients led him to conclude that we speak with our left&#x2013;brain.</p>
+    <h2>Case study</h2>
+    <p>In the 1960s, Roger Sperry and Michael devised an ingenious experiment to determine whether language was lateralized to the left hemisphere. They worked with split&#x2013;brain patients (patients who had the connective tissue between right and left hemispheres removed). Using the left hemisphere, split&#x2013;brain patients could produce the name of objects held in the right hand without difficulty. Amazingly, if they held the same object in the left hand (which is controlled by the right hemisphere), the object could not be named.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>language production (both speech and sign)</li>
+      <li>comprehension of complex syntax </li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Language impairments in autism may be related to abnormalities in Broca&apos;s area (see Bauman and Kemper, 2005).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>Broca&apos;s aphasia (inability to express language) which includes halting speech</li>
+      <li>repetitive speech (perseveration)</li>
+      <li>disordered syntax and grammar and disordered structure of individual words</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15749244" target="_blank">Bauman and Kemper</a> (2005) review neuroanatomical evidence that language impairments in autism may be related to abnormalities in Broca&apos;s area (Pubmed ID number: 15749244).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16062172" target="_blank">Gazzaniga</a> (2005) reviews 45 years of experiments with split&#x2013;brain studies that have yielded insights into hemispheric specialization and integration, and the functions of specific brain structures (Pubmed ID number: 16062172).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/14572520" target="_blank">Horwitz and colleagues</a> (2004) use functional neuroimaging to show that the same part of Broca&apos;s area is activated by both speech and signing during the production of language (Pubmed ID number: 14572520).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Broca%27s%20Area" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=2062" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/prefrontal.swf" label="Prefrontal Cortex"  moduleIndex="1" startingFrame="64" accessID="prefrontal" moduleLevel="2">
+    <h1>The Prefrontal Cortex</h1>
+    <h2>Overview</h2>
+    <p>The prefrontal cortex is thought to play an important role in “higher” brain functions. It is a critical part of the executive system, which refers to planning, reasoning, and judgment. It is also involved in personality and emotion by contributing to the assessment and control of appropriate social behaviors.</p>
+    <h2>Case study</h2>
+    <p>Phineas Gage, the subject of one of science&apos;s best known neurological patients, suffered severe damage to the prefrontal cortex following a railroad&#x2013;related accident in 1848. Gage survived but showed signs of impaired social skills. His case study, which is still controversial today, was a landmark in that it attributed specific behaviors to specific brain regions.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>executive processes (voluntary behavior such as decision&#x2013;making, planning, problem&#x2013;solving, and thinking)</li>
+      <li>attention</li>
+      <li>inhibition</li>
+      <li>intelligence</li>
+      <li>social skills </li>
+	</ul>
+    <h2>Associated cognitive damage</h2>
+    <p>Many cognitive disorders, including ADHD, autism, bipolar disorder, depression, and schizophrenia, have been associated with dysfunctions of the prefrontal cortex</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>impairments in initiating voluntary behavior</li>
+      <li>the inability to inhibit inappropriate social behaviors</li>
+      <li>memory dysfunction </li>
+	</ul>
+    <h2>Substructures</h2>
+	<ul>
+      <li>orbitofrontal cortex</li>
+      <li>dorsolateral prefrontal cortex</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15165371" target="_blank">Ratiu and colleagues</a> (2004) use 3D modeling and quantitative computer&#x2013;aided techniques to reconstruct and reinterpret the damage incurred by the famous neurological patient Phineas Gage (Pubmed ID number: 15165371).</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17876781" target="_blank">Shaw</a> (2007) relates the development of intelligence to a network of structural changes with a focus on the prefrontal cortex. Several candidate genes are discussed in relation to these changes. (Pubmed ID number: 17876781).</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18346997" target="_blank">Siever</a> (2008) reviews the neurobiology of aggression and violence as a failure of control systems in the prefrontal cortex combined with a hyper&#x2013;responsivity of the amygdala and other limbic regions (Pubmed ID number: 18346997).</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18024183" target="_blank">Tanji and colleagues</a> (2007) review evidence that the lateral prefrontal cortex is the central mechanism of the executive control of behavior, particularly in relation to planning (Pubmed ID number: 18024183).</li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Prefrontal%20Cortex" target="_blank">Medical Subject Headings</a> (MeSH)</li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=1351" target="_blank">BrainInfo</a></li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/premotor.swf" label="Premotor Cortex"  moduleIndex="2" startingFrame="64" accessID="premotor" moduleLevel="2">
+    <h1>The Premotor Cortex</h1>
+    <h2>Overview</h2>
+    <p>The premotor cortex consists of a narrow region between the prefrontal and motor cortices. It is involved in preparing and executing limb movements and uses information from other cortical regions to select appropriate movements. The premotor cortex is also important for learning (imitation) and social cognition (empathy) – mirror neurons in the premotor cortex area of the macaque brain fire when the animal observes an action in others.</p>
+    <h2>Case study</h2>
+    <p>Schmitt and colleagues (2006) found that electrical stimulation of the premotor cortex produced spontaneous smiling and laughter. The authors suggested that the premotor cortex is specifically involved in the muscle contractions involved in laughter rather than in processing feelings of mirth or happiness.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>planning and executing motor movements</li>
+      <li>imitation</li>
+      <li>empathy</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>The role of the mirror neurons in autism is currently a hot topic in neuroscience research (see, for example, Iacoboni and Dapretto, 2006). Mirror neurons seem to be primarily located in the premotor cortex and inferior parietal cortex.</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>impairments in self&#x2013;initiated movements</li>
+      <li>impaired learning in associating a motor response to a visual cue</li>
+      <li>cognitive problems (particularly in relation to social skills)</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17301027" target="_blank">Gallese</a> (2006) reviews the premotor cortex as part of the ‘theory of mind&apos; hypothesis of social cognition (Pubmed ID number: 17301027).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17115076" target="_blank">Iacoboni and Dapretto</a> (2006) review evidence that a dysfunction of the mirror neuron system in humans might be a primary deficit in autism (Pubmed ID number: 17115076).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16675305" target="_blank">Schmitt and colleagues</a> (2006) find that electrical stimulation of the premotor cortex produces spontaneous laughter (Pubmed ID number: 16675305).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17585307" target="_blank">Zatorre, Chen, and Penhune</a> (2007) stressed the importance of the premotor cortex in integrating “higher order” features of music with timing and organizing actions (Pubmed ID number: 17585307).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Premotor%20Cortex" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=2331" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/primaryMotor.swf" label="Primary Motor Cortex"  moduleIndex="3" startingFrame="64" accessID="primary_motor" moduleLevel="2">
+    <h1>The Primary Motor Cortex</h1>
+    <h2>Overview</h2>
+    <p>The primary motor cortex (also known as M1) is critical to initiating motor movements. Areas of the motor cortex correspond precisely to specific body parts. For example, leg movements map to the part of the motor cortex closest to the midline. Not all body parts are equally represented by surface area or cell density – representations of the arm hand motor area occupy the most space in the motor cortex (unsurprising given their importance to human behavior). Similarly, representations in the motor cortex can become relatively large or small with practice/training.</p>
+    <h2>Case study</h2>
+    <p>The Canadian neurosurgeon Wilder Penfield established a relationship between the motor cortex and specific body parts in the 1930s. Penfield stimulated the brains of conscious epileptic patients during brain surgery, prompting one patient to utter the culturally iconic phrase "I can smell burned toast!"</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>coordination and initiation of motor movement</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Along with the premotor cortex, the primary motor cortex is important to the mirror neuron system, which may be dysfunctional in individuals with autism. There is some evidence that impaired movements in individuals with schizophrenia may be associated with the motor cortex dysfunction (Fitzgerald and colleagues, 2002).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>speech impairments</li>
+      <li>distortions of body image</li>
+      <li>motor&#x2013;learning deficits</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17283605" target="_blank">Dancuse</a> (2006) reviews the brain&apos;s ability to redraw representational maps following damage to the motor cortex (Pubmed ID number: 17283605).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18177603" target="_blank">Lotze and Moseley</a> (2007) examine the role of the motor cortex in distortions of body image (Pubmed ID number: 18177603).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17691289" target="_blank">Saitoh and Yoshimine</a> (2007) review evidence that stimulation of the motor cortex can provide relief from intractable pain (Pubmed ID number: 17691289).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Primary%20Motor%20Cortex" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=1910" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/limbicSystem.swf" label="Limbic System"  moduleIndex="15" startingFrame="64" accessID="limbic_system" moduleLevel="1">
+    <h1>The Limbic System</h1>
+    <h2>Overview</h2>
+    <p>The limbic system is a group of brain structures including the amygdala, hippocampus, and hypothalamus that are involved in processing and regulating emotions, memory, and sexual arousal. The limbic system is an important element of the body&apos;s response to stress and is highly connected to the endocrine and autonomic nervous systems. The limbic system is also responsible for processing the body&apos;s response to odors.</p>
+    <h2>Case study</h2>
+    <p>The limbic system plays an important role in regulating emotions. A 2004 study by Okun and colleagues examined emotional changes following deep brain stimulation of the dentate gyrus. Stimulation of the dentate gyrus caused the participant to smile spontaneously and to report experiences of euphoria.  This may prove to be a useful therapy for mood disorders. Bipolar disorder and schizophrenia have also been strongly linked to abnormalities in the limbic system.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>memory formation and storage</li>
+      <li>regulating emotion</li>
+      <li>processing smells</li>
+      <li>sexual arousal</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Dysfunctions of a number of limbic structures (e.g. amygdala, dentate gyrus) have been strongly associated with depression and response to antidepressant treatment.</p>
+    <h2>Associated damage</h2>
+	<ul>
+      <li>olfactory (sense of smell) impairments</li>
+      <li>agitation</li>
+      <li>uncontrolled emotions</li>
+      <li>abnormal biological rhythms</li>
+      <li>abnormal sexual behavior</li>
+      <li>memory impairments</li>
+	</ul>
+    <h2>Substructures</h2>
+	<ul>
+      <li>amygdala</li>
+      <li>cingulate gyrus</li>
+      <li>dentate gyrus</li>
+      <li>entorhinal cortex</li>
+      <li>epithalamus, hippocampus</li>
+      <li>hypothalamus</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16641835" target="_blank">DelBello and colleagues</a> (2006) review research relating limbic structures with bipolar disorder (Pubmed ID number: 16641835).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16271821" target="_blank">Herman and colleagues</a> (2003) review stress regulation in relation to interactions between the limbic system and the hypothalamo&#x2013;pituitary&#x2013;adrenocortical axis (Pubmed ID number: 16271821).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17944926" target="_blank">Maletic and colleagues</a> (2007) review the neuropathology of depression, which has been strongly linked to prefrontal and limbic structures (Pubmed ID number: 17944926).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15788264" target="_blank">Okun and colleagues</a> (2004) find that deep brain stimulation of the dentate gyrus induced smiling and feeling of euphoria (Pubmed ID number: 15788264).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/14584827" target="_blank">Sapolsky</a> (2003) reviews neural plasticity in the body&apos;s response to stress, emphasizing changes in the limbic system (Pubmed ID number: 14584827).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17691350" target="_blank">Stathis and colleagues</a> (2007) review connections between the limbic system and basal ganglia and their implications for rehabilitation of anxiety and affective disorders (Pubmed ID number: 17691350).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17942479" target="_blank">White and colleagues</a> (2007) review research relating limbic structures with schizophrenia (Pubmed ID number: 17942479).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Limbic%20System" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=2055" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/amygdala.swf" label="Amygdala"  moduleIndex="5" startingFrame="64" accessID="amygdala" moduleLevel="2">
+    <h1>The Amygdala</h1>
+    <h2>Overview</h2>
+    <p>The amygdala is a complex structure adjacent to the hippocampus. The amygdala is involved in processing emotions, and fear&#x2013;learning. It links areas of the cortex that process “higher” cognitive information with hypothalamic and brainstem systems that control “lower” metabolic responses (e.g. touch, pain sensitivity, and respiration).  This allows the amygdala to coordinate physiological responses based on cognitive information – the most well&#x2013;known example being the fight&#x2013;or&#x2013;flight response.</p>
+    <p>The amygdala has three functionally distinct parts – 1) the medial group of subnuclei has many connections with the olfactory bulb and olfactory cortex, 2) the basolateral group has extensive connections with the cerebral cortex, particularly the orbital and medial prefrontal cortex, and 3) the central and anterior group of nuclei has many connections with the brainstem hypothalamus, and sensory structures.</p>
+    <h2>Case study</h2>
+    <p>The neurological patient SM has extensive damage to the amygdala in each hemisphere. She has no motor, sensory, or cognitive deficits. When asked to identify photographs of a series of facial expressions, SM could identify every expression but one, she could not recognize fear. Similarly, when asked to draw facial expressions, SM produced accomplished pictures of each emotion, but she could not reproduce the expression of fear. When asked about her drawings, she explained that &apos;she did not know what an afraid face would look like.&apos;</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>fear&#x2013;processing</li>
+      <li>emotion processing</li>
+      <li>learning</li>
+      <li>fight&#x2013;or&#x2013;flight response</li>
+      <li>reward&#x2013;processing</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Many studies have linked autism with amygdala dysfunction. The lack of empathy often shown by autistic individuals has associated with the amygdala (Blair, 2008). Neural activity in the amygdala has also been strongly linked to depression (Northoff, 2007) and bipolar disorder (Phillips &amp; Vieta, 2007). There is very strong evidence linking post&#x2013;traumatic stress disorder with amygdala responses (Brewin, 2008).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>aggression</li>
+      <li>irritability</li>
+      <li>loss of control of emotion</li>
+      <li>disruption of short&#x2013;term memory</li>
+      <li>deficits in recognizing emotions (particularly fear)</li>
+	</ul>
+    <h2> Research reviews </h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18038346" target="_blank">Blair</a> (2008) discusses two disorders, psychopathy and autism, in relation to abnormal amygdala functioning (Pubmed ID number: 18038346).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18037017" target="_blank"> Brewin</a> (2008) reviews neurological correlates of post&#x2013;traumatic stress disorder, which has been strongly linked to the amygdala (Pubmed ID number: 18037017).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17562698" target="_blank">Phillips &amp; Vieta</a> (2007) consider functional abnormalities of the amygdala as potential biomarkers of bipolar disorder (Pubmed ID number: 17562698).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17988930" target="_blank">Murray</a> (2007) reviews research that suggests the amygdala is just as important for processing positive reward and reinforcement as it is for negative (Pubmed ID number: 17988930).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17379318" target="_blank">Northoff</a> (2007) reviews the neuropathology of depression, which has been linked with abnormal neural activity in a number of structures, including the amygdala (Pubmed ID number: 17379318).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18060012" target="_blank">Sandi and Pinelo&#x2013;Nava</a> (2007) review the neurobiological mechanisms of stress as a modulator of learning and memory, which involve the hippocampus, amygdala, and prefrontal cortex (Pubmed ID number: 18060012).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18209732" target="_blank">Pessoa</a> (2008) reviews the relationship between emotion and cognition, arguing that complex cognitive&#x2013;emotional behavior is regulated through networks of brain areas, none of which are specifically cognitive. (Pubmed ID number: 18209732).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Amygdala" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=237" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/cingulate.swf" label="Cingulate Cortex"  moduleIndex="25" startingFrame="64" accessID="cingulate" moduleLevel="2">
+    <h1>The Cingulate Gyrus</h1>
+    <h2>Overview</h2>
+    <p>An important part of the limbic system, the cingulate gyrus helps regulate emotions and pain. The cingulate gyrus is thought to directly drive the body&apos;s conscious response to unpleasant experiences. In addition, it is involved in fear and the prediction (and avoidance) of negative consequences and can help orient the body away from negative stimuli. Learning to avoid negative consequences is an important feature of memory.</p>
+    <h2>Case study</h2>
+    <p>In an intriguing study, Nente and colleagues (2005) present a case study of a 34&#x2013;year old man with a left anterior cingulate lesion. During hospitalization, the man repeatedly reported strong feelings of having previously known many of the hospital personnel. He would ask if he knew them from his school years or childhood in a rural village. These symptoms receded after two weeks and the patient made a full recovery.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>pain processing</li>
+      <li>emotion</li>
+      <li>memory</li>
+      <li>self&#x2013;regulation</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Because of its role in emotion&#x2013;processing, the cingulate gyrus has been associated with numerous disorders including autism, bipolar disorder, depression, obsessive&#x2013;compulsive disorder, post&#x2013;traumatic stress disorder and schizophrenia (Yucel and colleagues, 2003).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>inappropriate emotions</li>
+      <li>lack of fear</li>
+      <li>impaired nociception (sensation of pain)</li>
+      <li>learning impairments</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17827429" target="_blank">Nente and colleagues</a> (2007) report a case&#x2013;study of a patient with “pathological hyperfamiliarity for others” following a lesion in the left anterior cingulate region (Pubmed ID number: 17827429).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18189012" target="_blank">Posner and colleagues</a> (2007) review the role played by the anterior cingulate gyrus in self&#x2013;regulation (Pubmed ID number: 18189012).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15995724" target="_blank">Vogt</a> (2005) reviews the interactions between pain and emotions in the cingulate gyrus (Pubmed ID number: 15995724).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/14517578" target="_blank">Yucel and colleagues</a> (2003) review anterior cingulate dysfunction in relation to psychiatric disorders (Pubmed ID number: 14517578).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Cingulate%20Cortex" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=3535" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/dentateGyrus.swf" label="Dentate Gyrus"  moduleIndex="17" startingFrame="64" accessID="dentate_gyrus" moduleLevel="2">
+    <h1>The Dentate Gyrus</h1>
+    <h2>Overview</h2>
+    <p>The hippocampal formation has three regions, which are highly interconnected: the dentate gyrus, CA3, and CA1. It is one of the very few regions in the brain where adult neurogenesis (development of new neurons) has been confirmed. The dentate gyrus may play an important role in translating complex neural codes from cortical areas into simper code that can be used by the hippocampus to form new memories.</p>
+    <h2>Case study</h2>
+    <p>Mice whose mothers exercise frequently were found to have significantly more cells in the dentate gyrus, which may have major benefits in terms of learning and memory. In humans, improved neurodevelopment in children has been associated with exercise during pregnancy.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>memory formation</li>
+      <li>possible role in memory recall</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Sahay and colleagues (2007) speculate that neurogenesis in the dentate gyrus may mediate some of the behavioral effects of antidepressants. The dentate gyrus has also attracted attention in relation to Alzheimer&apos;s disease because of its resistance to the formation of plaques, tangles, and neuronal death (Ohm, 2007).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>memory impairments</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16537457" target="_blank">Bick&#x2013;Sander and colleagues</a> (2007) find that mice who exercise regularly while pregnant have offspring with significantly more hippocampal development (Pubmed ID number: 16537457).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/8969727" target="_blank">Clapp</a> (1996) find that the children of mothers who exercised during pregnancy have neurodevelopmental advantages (Pubmed ID number: 8969727).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17765747" target="_blank">Ohm </a> (2007) discusses the dentate gyrus in relation to the neuropathology of Alzheimer&apos;s disease (Pubmed ID number: 17765747).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17765746" target="_blank"> Sahay and colleagues</a> (2007) review the relationship between dentate gyrus neurogenesis and depression (Pubmed ID number: 17765746).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Dentate%20Gyrus" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=179" target="_blank"> BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/entorhinal.swf" label="Entorhinal Cortex"  moduleIndex="24" startingFrame="64" accessID="entorhinal" moduleLevel="2">
+    <h1>The Entorhinal Cortex</h1>
+    <h2>Overview </h2>
+    <p>The entorhinal cortex plays a major role in memory formation. Two major connections from the entorhinal area (lateral and medial) provide the main input to the hippocampus and are important to pre&#x2013;processing memorable information. The lateral input stream is thought to convey spatial information to the hippocampus, while the medial input stream conveys nonspatial information. The stream of information from the entorhinal cortex, through the dentate gyrus, to the hippocampus is called the perforant path.</p>
+    <h2>Brain fact</h2>
+    <p>Neuroimaging studies show that the entorhinal cortex is one of the first areas of the brain to show signs of Alzheimer&apos;s disease, with substantial shrinkage in patients with very mild symptoms. A recent study by Shaw and colleagues (2007) found that even in children with an increased genetic risk of developing Alzheimer&apos;s disease, the entorhinal cortex was significantly thinner. This hints at the possibility of using the entorhinal cortex to identify candidates for early intervention, even in the absence of symptoms.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>declarative memory</li>
+      <li>spatial memory</li>
+      <li>self&#x2013;localization </li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Reductions in volume of the entorhinal cortex are associated with Alzheimer&apos;s disease, and may be used as an early marker for diagnosis and treatment. The entorhinal cortex has also been associated with a number of other cognitive disorders, particularly schizophrenia.</p>
+    <h2>Associated damage</h2>
+	<ul>
+      <li>amnesia</li>
+      <li>impaired declarative memory and spatial learning</li>
+	</ul>
+    <h2>Research reviews </h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18248959" target="_blank">Baiano and colleagues</a> (2008) report decreased entorhinal cortex volumes in schizophrenia patients (Pubmed ID number: 18248959).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/10023955" target="_blank">Bobinski and colleagues</a> (1999) use MRI to detect early signs of Alzheimer&apos;s disease in the entorhinal cortex (Pubmed ID number: 10023955).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15961670" target="_blank">Hargreaves and colleagues</a> (2005) conclude that spatial information is represented by the medial entorhinal cortex and nonspatial information is represented by the lateral entorhinal cortex (Pubmed ID number: 15961670).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17607757" target="_blank">Kerr and colleagues</a> (2007) review the functional neuroanatomy of the lateral and medial entorhinal areas (Pubmed ID number: 17607757).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17509484" target="_blank">Shaw and colleagues</a> (2007) show that children with a genetic risk of developing Alzheimer&apos;s have a thinner entorhinal cortex (Pubmed ID number: 17509484).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17765711" target="_blank">Witter</a> (2007) examines the flow of information along the perforant path from the entorhinal cortex to the dentate gyrus (Pubmed ID number: 17765711).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Entorhinal%20Cortex" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=168" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/hippocampus.swf" label="Hippocampus"  moduleIndex="16" startingFrame="64" accessID="hippocampus" moduleLevel="2">
+    <h1>The Hippocampus</h1>
+    <h2>Overview</h2>
+    <p>The hippocampus is the structure in the brain most closely aligned to memory formation. It is important as an early storage place for long&#x2013;term memory, and it is involved in the transition of long&#x2013;term memory to even more enduring permanent memory. The hippocampus also plays an important role in spatial navigation.</p>
+    <h2>Case study</h2>
+    <p>In 1985, Clive Wearing, an English conductor, composer, and musician, contracted viral encephalitis, which caused extensive damage to the left and right hippocampus. Although his intellectual and perceptual abilities are intact, he has severe memory impairments and has completely lost the ability to form new declarative memories. This causes him to assume he has just awoken from a coma, writing repetitively in his diary, “I am awake!” The inability to remember has severely debilitated his life – he cannot engage in conversation (he forgets the previous sentence), he cannot go outside alone (he forgets where he is going or coming from), and he is incapable of comprehending the events that essentially define his existence.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>early memory storage</li>
+      <li>formation of long&#x2013;term memory</li>
+      <li>spatial navigation</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Classic symptoms of Alzheimer&apos;s disease include memory loss and disorientation both of which have been strongly associated with decline in the hippocampus (Scheff and Price, 2006).  There is also evidence linking hippocampal atrophy to depression (e.g. Sheline and colleagues, 2002), bipolar disorder, and schizophrenia (Weis and colleagues, 2007).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>severe memory impairment</li>
+      <li>disorientation</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18270514" target="_blank"> Bird and Burgess</a> (2008) review current literature on the role of the hippocampus in memory and spatial processing (Pubmed ID number: 18270514).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18227747" target="_blank"> Buckley</a> (2008) reviews developments in the treatment and management of schizophrenia and bipolar disorder (Pubmed ID number: 18227747).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16914849" target="_blank"> Scheff and Price</a> (2006) review disease&#x2013;related alterations in synaptic density in Alzheimer&apos;s (Pubmed ID number: 16914849).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15177085" target="_blank"> Sheline</a> (2002) reviews the contribution of the hippocampus to depression (Pubmed ID number: 15177085).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17219017" target="_blank"> Weis and colleagues</a> (2007) report reduced expression of the HERV&#x2013;W GAG protein in the cingulate gyrus and hippocampus in schizophrenia, bipolar disorder, and depression (Pubmed ID number: 17219017).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Hippocampus" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=3157" target="_blank"> BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/hypothalamus.swf" label="Hypothalamus"  moduleIndex="23" startingFrame="64" accessID="hypothalamus" moduleLevel="2">
+    <h1>The Hypothalamus</h1>
+    <h2>Overview</h2>
+    <p>The hypothalamus regulates a wide range of behavioral and physiological activities. It controls many autonomic functions such as hunger, thirst, body temperature, and sexual activity. To do this, the hypothalamus integrates information from many different parts of the brain and is responsive to a variety of stimuli including light (it regulates circadian rhythms), odors (e.g. pheromones), stress, and arousal (hypothalamic neurons release oxytocin directly into the bloodstream). Other functions controlled by the hypothalamus include parenting behavior, perspiration, blood pressure, and heart rate.</p>
+    <h2>Case study</h2>
+    <p>Self&#x2013;mutilation is a serious condition with many causes. Kuhn and colleagues (2008) describe a patient with severe self&#x2013;mutilating behavior that followed traumatic brain injury. The patient&apos;s medical team used deep brain stimulation of the hypothalamus to successfully treat these symptoms.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>hunger</li>
+      <li>thirst</li>
+      <li>body temperature</li>
+      <li>sexual activity</li>
+      <li>arousal</li>
+      <li>parenting</li>
+      <li>perspiration</li>
+      <li>blood pressure</li>
+      <li>heart rate </li>
+      <li>shivering</li>
+      <li>pupil dilation</li>
+      <li>circadian rhythms</li>
+      <li>sleep</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>The hypothalamus plays a major role in the body&apos;s response to stress and is a cornerstone of the hypothalamic&#x2013;pituitary&#x2013;adrenal (HPA) axis. It has been strongly associated with depression and bipolar disorder, and is also linked with schizophrenia. Treatment with antidepressants reduces HPA activity.</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>aggression</li>
+      <li>chronic stress</li>
+      <li>hypothermia</li>
+      <li>hypersomnia (excessive sleep)</li>
+      <li>lethargy</li>
+      <li>self&#x2013;mutilation</li>
+      <li>weight gain/loss</li>
+      <li>over/under active sex drive</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17524488" target="_blank">Bao and colleagues</a> (2008) discuss the role played by the hypothalamus in the neurobiology of depression (PMID: 17524488).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18580794" target="_blank">Kuhn and colleagues</a> (2008) treat severe self&#x2013;mutilating behavior using bilateral stimulation of the hypothalamus (PMID: 18580794).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17299602" target="_blank">Mason and Pariante</a> (2006) discuss the effects of antidepressants on the HPA axis (PMID: 17299602).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/12957869" target="_blank">McGinty and Szymusiak</a> (2003) examine hypothalamic contributions to of sleep and arousal (PMID: 12957869).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Hypothalamus" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=375" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/subiculum.swf" label="Subiculum"  moduleIndex="18" startingFrame="64" accessID="subiculum" moduleLevel="2">
+    <h1>The Subiculum</h1>
+    <h2>Overview</h2>
+    <p>The subiculum is the main output region of the hippocampus and is therefore important to learning and memory. It also plays a role in spatial navigation, mnemonic (symbol) processing, and regulating the body&apos; response to stress by inhibiting the HPA axis.</p>
+    <h2>Case study</h2>
+    <p>A 2001 paper by Vorel and colleagues examined the role of the subiculum in cocaine addiction. The group stimulated the subiculum of rats that had previously been addicted to cocaine. Stimulation of the subiculum caused the rats to obsessively seek the drug once again. However, when glutamate signals in the brain were blocked, such relapses were prevented.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>memory processing</li>
+      <li>regulation of the body&apos;s response to stress</li>
+      <li>spatial navigation</li>
+      <li>information processing</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>The subiculum has been implicated in the onset of epilepsy. Evidence associating the subiculum with cognitive disorders has been largely inconsistent (Damadzic and colleagues, 2002).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>memory impairment</li>
+      <li>disorientation (deficits in heading and bearing)</li>
+      <li>stress</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/11935265" target="_blank">Damadzic and colleagues</a> (2002) find no evidence of subiculum dysfunction in adults with schizophrenia, bipolar disorder, or depression (PMID: 11935265).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16185252" target="_blank">O&apos;Mara</a> (2005) reviews the primary functions of the hippocampus and argues for a segregation of function between the dorsal and ventral sub regions (PMID: 16185252).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/11349151" target="_blank">Vorel and colleagues</a> (2001) found that stimulating the subiculum caused relapse in cocaine&#x2013;addicted rats (PMID: 11349151).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Subiculum" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=188" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/occipital.swf" label="Occipital Lobe"  moduleIndex="14" startingFrame="64" accessID="occipital" moduleLevel="1">
+    <h1>The Occipital Lobes</h1>
+    <h2>Overview</h2>
+    <p>The occipital cortex is the primary visual area of the brain. It receives projections from the retina (via the thalamus) from where different groups of neurons separately encode different visual information such as color, orientation, and motion. Pathways from the occipital lobes reach the temporal and parietal lobes and are eventually processed consciously. Two important pathways of information originating in the occipital lobes are the dorsal and ventral streams. The dorsal stream projects to the parietal lobes and processes where objects are located. The ventral stream projects to structures in the temporal lobes and processes what objects are.</p>
+    <h2>Case study</h2>
+    <p>Synesthesia is a neurological phenomenon in which information from different senses is blended. A common form is grapheme–color synesthesia, where letters and numbers are perceived as having specific colors (e.g. “the number 7 is yellow”). A number of imaging studies (e.g. Sperling and colleagues, 2006) highlight activations in the color&#x2013;processing regions of the occipital cortex (e.g. area V4) when individuals view letters or numbers. An intriguing study by Wolfgang K&#246;hler suggests that some forms of synesthesia (the bouba/kiki effect) may be extremely common in humans.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>vision</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Because damage to the occipital lobes can cause visual hallucinations, the region has been investigated as a neurobiological correlate of schizophrenia (e.g. McCarley and colleagues, 1999) and also bipolar disorder (e.g. Vawter, 2007). A number of studies have found evidence of overgrowth in the occipital cortex in individuals with autism (Tate and colleagues, 2007). Changes in blood flow in the occipital lobes have been correlated with depression (Ishizaki and colleagues, 2008).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>hallucinations</li>
+      <li>blindness</li>
+      <li>inability to see color, motion, or orientation</li>
+      <li>synesthesia</li>
+	</ul>
+    <h2> Substructures</h2>
+	<ul>
+      <li>cuneus</li>
+      <li>visual areas V1&#x2013;V5</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16269367" target="_blank">Hubbard and Ramachandran</a> (2005) review the neurobiological correlates of synesthesia (Pubmed ID number: 16269367).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18214999" target="_blank">Ishizaki</a> (2008) finds abnormalities in a number of brain regions including the occipital lobes in individuals with late&#x2013;life depression (Pubmed ID number: 18214999).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/10331102" target="_blank">McCarley and colleagues</a> (1999) examine MRI data from schizophrenic patients, which show abnormalities in a number of brain structures including the occipital lobes (Pubmed ID number: 10331102).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16683504" target="_blank">Sperling and colleagues</a> (2006) use fMRI to examine neuronal correlates of color&#x2013;grapheme synesthesia (Pubmed ID number: 16683504).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17607599" target="_blank">Tate and colleagues</a> (2007) review evidence of overgrowth of the occipital region in autism (Pubmed ID number: 17607599).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Occipital%20Lobe" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=140" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/parietalLobe.swf" label="Parietal Lobe"  moduleIndex="12" startingFrame="64" accessID="parietal_lobe" moduleLevel="1">
+    <h1>The Parietal lobes</h1>
+    <h2>Overview</h2>
+    <p>The parietal cortex plays an important role in integrating information from different senses to build a coherent picture of the world. It integrates information from the ventral visual pathways (which process what things are) and dorsal visual pathways (which process where things are). This allows us to coordinate our movements in response to the objects in our environment. It contains a number of distinct reference maps of the body, near space, and distant space, which are constantly updated as we move and interact with the world.</p> 
+    <p>The parietal cortex processes attentional awareness of the environment, is involved in manipulating objects, and representing numbers.</p>
+    <h2>Case study</h2>
+    <p>Damage to the posterior parietal lobes can result in an intriguing neurological disorder called hemispatial neglect. The disorder is characterized by an inability to attend to people, objects, or one&apos;s own body on the side opposite the damaged area (typically the right hemisphere). Hemispatial neglect patients may eat from only one side of a plate, or dress one side of their body. A famous paper by Bisiach and Luzzatti (1978) reports case studies of two patients who could not conjure visual images of buildings on the left side of their home town (regardless of the direction they imagined themselves facing). This visual neglect, therefore, existed even in their imagination.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>perception and integration of somatosensory information (e.g. touch, pressure, temperature, and pain)</li>
+      <li>visuospatial processing</li>
+      <li>spatial attention</li>
+      <li>spatial mapping</li>
+      <li>number representation</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Atrophy in a number of brain structures, including the right temporo&#x2013;parietal region, may be a precursor for Alzheimer&apos;s disease (Fouquet and colleagues, 2007). Vance and colleagues (2007) found evidence of right parietal dysfunction in a subgroup of children with ADHD. Torrey (2007) reports an association between schizophrenia and the inferior parietal lobule.</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>inability to locate and recognize objects</li>
+      <li>events</li>
+      <li>and parts of the body (hemispatial neglect)</li>
+      <li>difficulty in discriminating between sensory</li>
+      <li>information</li>
+      <li>disorientation</li>
+      <li>lack of coordination</li>
+	</ul>
+    <h2>Substructures</h2>
+	<ul>
+      <li>somatosensory cortex</li>
+      <li>inferior parietal lobule</li>
+      <li>superior parietal lobule</li>
+      <li>precuneus</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16295118" target="_blank">Bisiach and Luzzatti</a> (1978) present case studies of two patients with problems imagining/representing the left side of space following damage to the right posterior parietal lobe (Pubmed ID number: 16295118).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17494829" target="_blank">Hale and colleagues</a> (2007) used fMRI to investigate atypical brain activation in adult ADHD (17494829).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17521514" target="_blank">Hubbard</a> (2007) examines the neurophysiology of synesthesia, which is mediated by the parietal cortex (Pubmed ID number: 17521514).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17851044" target="_blank">Torrey</a> (2007) reviews the role played by the inferior parietal lobule in the neuropathology of schizophrenia (Pubmed ID number: 17851044).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17603405" target="_blank">Trimble</a> (2007) reviews links between the parietal cortex and body image (Pubmed ID number: 17603405).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17471290" target="_blank">Vance and colleagues</a> (2007) use fMRI to identify right parietal dysfunction in children with ADHD (Pubmed ID number: 17471290).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Parietal%20Lobe" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=95" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/somatosensory.swf" label="Somatosensory Cortex"  moduleIndex="13" startingFrame="64" accessID="somatosensory" moduleLevel="2">
+    <h1>The Somatosensory Cortex/Postcentral Gyrus</h1>
+    <h2>Overview</h2>
+    <p>The somatosensory cortex (postcentral gyrus) receives tactile information from the body. Sensory information is carried to the brain by neural pathways to the spinal cord, brainstem, and thalamus, which project to the somatosensory cortex (which in turns has numerous connections with other brain areas). It integrates sensory information (e.g. touch, pressure, temperature, and pain, spatial attention), producing a “homunculus map”, similar to that of the primary motor cortex. Sensory information about the feet, for example, map to the medial somatosensory cortex.</p>
+    <h2>Case study</h2>
+    <p>It is relatively common for amputees to experience sensation in a limb that has been amputated. This experience is known as phantom limb, and in many instances can be quite painful. Studies have shown that the pain correlates to changes in primary somatosensory cortex, which is no longer receiving anticipated input from the amputated limb (see Flor, 2003). An ingenious study by Ramachandran and colleagues (1995) treated phantom limb patients by placing a mirror at the patient&apos;s midline. Looking into the mirror “tricks” the somatosensory cortex into “seeing” the amputated limb. The visual experience of “moving” the amputated limb can be highly effective in eliminating phantom limb pain.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>sensory processing and integration</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>There is considerable evidence that individuals with autism experience sensory dysfunction, which may relate to abnormalities in the somatosensory cortex (Hodgetts and Hodgetts, 2007).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>difficulties in perceiving touch</li>
+      <li>failure to recognize objects by touch (astereognosia)</li>
+      <li>difficulty in recognizing one&apos;s own body</li>
+      <li>phantom limb pain</li>
+      <li>hemispatial neglect</li>
+	</ul>
+    <h2>Substructures</h2>
+	<ul>
+      <li>precuneus</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/12894409" target="_blank">Flor</a> (2003) reviews the process of remapping the somatosensory cortex following injury that area (Pubmed ID number: 12894409).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18183774" target="_blank">Hodgetts and Hodgetts</a> (2007) review evidence that sensory dysfunctions in individuals with autism correlate with the somatosensory cortex. Cortical stimulation of this region may be a promising rehabilitation technique. (Pubmed ID number: 18183774).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/7566144" target="_blank">Ramachandran and colleagues</a> (1995) report a novel procedure for relieving phantom limb pain using a “mirror box” (Pubmed ID number: 7566144).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Somatosensory%20Cortex" target="_blank">Medical Subject Headings</a> (MeSH) organizational tree – classification of structural relationships: 
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=3241" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/temporalLobe.swf" label="Temporal Lobe"  moduleIndex="7" startingFrame="66" accessID="temporal_lobe" moduleLevel="1">
+    <h1>The Temporal Lobes</h1>
+    <h2>Overview</h2>
+    <p>The temporal lobes contain a large number of substructures, whose functions include perception, face recognition, object recognition, memory acquisition, understanding language, and emotional reactions. Damage to the temporal lobes can result in intriguing neurological deficits called agnosias, which refer to the inability to recognize specific categories (body parts, colors, faces, music, smells).</p>
+    <h2>Case study</h2>
+    <p>Deep stimulation of the temporal lobe has been shown to produce profound religious and out&#x2013;of&#x2013;body experiences (Previc, 2006).</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>Recognition</li>
+      <li>Perception (hearing, vision, smell)</li>
+      <li>Understanding language</li>
+      <li>Learning and memory</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Schizophrenia is the cognitive disorder most closely aligned to temporal lobe dysfunction. Iritani (2007) reviews neuropathological abnormalities in schizophrenia, suggesting that it may be considered a neurodevelopmental disorder. The primary impairment in early Alzheimer&apos;s may be traced to the medial temporal lobe, and speech and social dysfunction in autism has been linked to the superior temporal sulcus (Redcay, 2008).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>Difficulties in understanding speech (Wernicke&apos;s aphasia), faces (prosopagnosia), and objects (agnosia)</li>
+      <li>Inability to attend to sensory input</li>
+      <li>Persistent talking</li>
+      <li>Long&#x2013; and short&#x2013;term memory loss</li>
+      <li>Increased/decreased interest in sexual behavior</li>
+      <li>Aggression</li>
+	</ul>
+    <h2>Substructures</h2>
+	<ul>
+      <li>amygdala</li>
+      <li>primary auditory cortex</li>
+      <li>superior temporal gyrus</li>
+      <li>Wernicke&apos;s area</li>
+      <li>middle temporal gyrus</li>
+      <li>middle temporal gyrus</li>
+      <li>inferior temporal gyrus</li>
+      <li>fusiform gyrus</li>
+	</ul>
+    <p>Note: In some conventions, the amygdala, cingulate cortex basal ganglia, hippocampus and parahippocampal gyrus are considered to be temporal lobe structures, in others they are not.</p>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18074997" target="_blank">DeFelipe and colleagues</a> (2007) discuss the anatomy and function of sub&#x2013;structures of the temporal lobe in the light of neuroimaging data (Pubmed ID number: 18074997).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17417939" target="_blank"> Eichenbaum and colleagues</a> (2007) review evidence for the distinction between familiarity and recollection and discuss the neural mechanisms involved in these processes (Pubmed ID number: 17417939).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18021384" target="_blank"> Iritani</a> (2007) reviews the neuropathology of schizophrenia, noting abnormalities in temporal lobe neurodevelopment (Pubmed ID number: 18021384).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17805975" target="_blank">Lowndes and Savage</a> (2007) propose that the earliest neuropsychological detection of Alzheimer&apos;s disease may lie in the medial temporal lobe (Pubmed ID number: 17805975).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17713122" target="_blank">Midorikawa</a> (2007) discusses the relationship between music and the brain in the light of case studies from patients with brain damage, developmental disorders, and degenerative diseases (Pubmed ID number: 17713122).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16439158" target="_blank">Previc</a> (2006) reviews the neuropsychology of religious activity particularly in the light of activity of the temporal and dopaminergic activation (Pubmed ID number: 16439158).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17706781" target="_blank">Redcay</a> (2008) discusses the role of the superior temporal sulcus performs in social and speech perception in autism (Pubmed ID number: 17706781).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Temporal%20Lobe" target="_blank">Medical Subject Headings</a> (MeSH). Note: MeSH does not classify the amygdala, basal ganglia, cingulate, and parahippocampal gyrus as temporal structures.</li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=125" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/midInfTemporal.swf" label="Middle &amp; Inferior Temporal Gyri"  moduleIndex="11" startingFrame="64" accessID="mid_inf_temporal" moduleLevel="2">
+    <h1>The Middle and Inferior Temporal Gyri</h1>
+    <h2>Overview</h2>
+    <p>The middle temporal gyrus and inferior temporal gyrus are involved in a number of cognitive processes, including semantic memory processing, language processes (middle temporal gyrus), visual perception (inferior temporal gyrus), and integrating information from different senses. These structures have been implicated in recognizing and interpreting information about faces and are a part of the ventral visual pathway, which identifies “what” things are. The inferior&#x2013;temporal gyrus also participates in some forms of mental imagery.</p>
+    <h2>Case study</h2>
+    <p>Damage to the temporal lobe can result in intriguing neurological deficits called agnosias (the inability to recognize specific object categories) and aphasias (the inability to comprehend language). Giovanello and colleagues (2003) report a case study of a patient called ST with ischemia (restricted blood flow) to the left anterior and inferior temporal region. ST had person&#x2013;specific impairments meaning, for example, he could name famous places but he could not produce the names of famous people.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>word retrieval</li>
+      <li>language and semantic memory processing</li>
+      <li>visual perception</li>
+      <li>multimodal sensory integration</li>
+      <li>autobiographical memory</li>
+      <li>visual recognition</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Many of the functional deficits associated with autism have been aligned with the middle and inferior temporal gyri, specifically hallucinations, language problems, semantic processing deficits, visual and sensory integration (Onitsuka and colleagues, 2004).  Plaque formations in the temporal gyri also correlate with cognitive decline in Alzheimer&apos;s (Loeffler and colleagues, 2008).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>difficulty in categorizing faces and objects</li>
+      <li>deficits in language including aphasia, semantic memory
+      and complex visual perception</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16210222" target="_blank">Giovanello and colleagues</a> (2003) report a case study of a patient with ischemia to the left anterior and inferior temporal region with impairments in person&#x2013;specific knowledge (Pubmed ID number: 16210222).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/10430951" target="_blank">Ishai, Ungerleider and colleagues</a> (1999) use MRI data to identify three distinct regions of the ventral temporal cortex that are part of the ventral visual pathway. These three regions respond preferentially to faces and two object categories (Pubmed ID number: 10430951).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17151161" target="_blank">Kuroki and colleagues</a> (2006) use MRI to examine middle and inferior temporal gyrus gray matter volume abnormalities in first&#x2013;episode schizophrenia (Pubmed ID number: 17151161).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18334032" target="_blank">Loeffler and colleagues</a> (2008) use staining to compare neural correlates of cognitive deficits in controls, mild cognitively impaired and Alzheimer&apos;s disease inferior temporal gyrus specimens (Pubmed ID number: 18334032).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17986479" target="_blank">Noulhiane and colleagues</a> (2007) discuss problems in autobiographical memory after temporal lobe surgery (Pubmed ID number: 17986479).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15337650" target="_blank">Onitsuka and colleagues</a> (2004) assess MRI neuroimaging data regarding the involvement of the middle and inferior temporal gyrus in chronic schizophrenia (Pubmed ID number: 15337650).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Temporal%20Gyrus" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=137" target="_blank">BrainInfo</a> (middle)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=138" target="_blank">BrainInfo</a> (inferior)
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/perirhinal.swf" label="Perirhinal Cortex"  moduleIndex="9" startingFrame="64" accessID="perirhinal" moduleLevel="2">
+    <h1>The Perirhinal Cortex</h1>
+    <h2>Overview</h2>
+    <p>The perirhinal cortex plays an important role in object recognition and in storing information (memories) about objects. It is highly connected to other brain structures, including the amygdala, basal ganglia, and frontal cortex. These extensive connections allow the perirhinal cortex to specialize in associating objects with sensory information and potential consequences (e.g. reward). </p>
+    <h2>Case study</h2>
+    <p>Barbeau and colleagues (2005) electrically stimulated the perirhinal region, which elicited vivid visual memories. The patient reported seeing images of a lake behind his childhood home and a chrome motorbike with black leather boots. The research team then used EEG to examine brain areas associated with stimulation and reported activity in the perirhinal region, hippocampus, primary visual cortex, and other limbic structures.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>object recognition</li>
+      <li>memory formation and storage</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>Individuals with Alzheimer&apos;s disease can have language impairments characterized by lexical (words or nouns referring to things) difficulties. These impairments have been associated with medial temporal structures, particularly the perirhinal cortex.</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>difficulties in identifying and naming objects</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15949517" target="_blank">Barbeau and colleagues</a> (2005) find that electrical stimulation of the perirhinal region elicits strong memories consisting of objects or of details of objects (Pubmed ID number: 15949517).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17764947" target="_blank">Devlin and Price</a> (2007) review the contributions made by the perirhinal cortex to visual perception (Pubmed ID number: 17764947).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16194975" target="_blank">Murray and colleagues</a> (2005) review the contributions of the perirhinal cortex and neighboring medial temporal lobe structures to memory and perception (Pubmed ID number: 16194975).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17948032" target="_blank">Squire and colleagues</a> (2007) review the differing roles played by the hippocampus and perirhinal cortex in two memory components – recollection and familiarity (Pubmed ID number: 17948032).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17936858" target="_blank">Venneri and colleagues</a> (2008) use 3D MRI scans to examine brain areas associated with language difficulties in Alzheimer&apos;s patients. The authors report atrophy in a number of structures, particularly the perirhinal cortex (Pubmed ID number: 17936858).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Perirhinal%20Cortex" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=2425" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/superiorTemporalGyrus.swf" label="Superior Temporal Gyrus"  moduleIndex="10" startingFrame="64" accessID="superior_temporal" moduleLevel="2">
+    <h1>The Superior Temporal Gyrus</h1>
+    <h2>Overview</h2>
+    <p>The superior temporal gyrus contains the primary auditory cortex, which is responsible for processing sounds. Specific sound frequencies map precisely onto the primary auditory cortex. This auditory (or tonotopic) map is similar to the homunculus map of the primary motor cortex. Some areas of the superior temporal gyrus are specialized for processing combinations of frequencies, and other areas are specialized for processing changes in amplitude or frequency. The superior temporal gyrus also includes the Wernicke&apos;s area, which (in most people) is located in the left hemisphere. It is the major area involved in the comprehension of language. </p>
+    <h2>Case study</h2>
+    <p>Kasai and colleagues (1999) report a case&#x2013;study of an 88&#x2013;year old woman with right auditory dysfunction. The woman reported hearing musical hallucinations that consisted entirely of familiar musical tunes. No other hallucinations or cognitive deficits were reported.</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>sound processing</li>
+      <li>speech processing and comprehension</li>
+      <li>auditory memory</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>The superior temporal gyrus has been proposed as a locus for auditory verbal hallucinations in schizophrenia (Stephane and colleagues, 2001).</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>difficulty processing auditory information and recognizing sound patterns</li>
+      <li>problems comprehending speech</li>
+	</ul>
+    <h2> Substructures</h2>
+	<ul>
+      <li>planum polare</li>
+      <li>planum temporale</li>
+      <li>Wernicke&apos;s area</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/10568580" target="_blank">Kasai and colleagues</a> (1999) report a case&#x2013;study of an 88&#x2013;year old woman with right auditory cortex dysfunction who reported musical hallucinations consisting of familiar songs (Pubmed ID number: 10568580).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17964251" target="_blank">Schreiner and Winer</a> (2007) discuss neuroanatomical evidence for auditory cortical maps and their role in representing and computing auditory information (Pubmed ID number: 17964251).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/11378315" target="_blank">Stephane and colleagues</a> (2001) find evidence of a correlation between electrophysiological abnormalities in the superior temporal gyrus and auditory verbal hallucinations. However, the authors found no structural evidence to support this hypothesis (Pubmed ID number: 11378315).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Superior%20Temporal%20Gyrus" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=136" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/wernickesArea.swf" label="Wernicke&apos;s Area"  moduleIndex="8" startingFrame="64" accessID="wernickes_area" moduleLevel="2">
+    <h1>Wernicke&apos;s Area</h1>
+    <h2>Overview</h2>
+    <p>Wernicke&apos;s area is a functionally defined structure that is involved in language comprehension. In about 97% of humans (including a large majority of left&#x2013;handers) major language functions are contained in the left hemisphere of the brain and for most people, Wernicke&apos;s area is lateralized to the left side. It takes its name from Carl Wernicke, who worked with language&#x2013;impaired patients to distinguish separate regions for language comprehension from production.</p>
+    <h2>Case study</h2>
+    <p>In Howard Gardner&apos;s <em>The Shattered Mind</em>, the author compares case studies from two patients, one with Broca&apos;s aphasia, and one with Wernicke&apos;s aphasia:</p>
+    <p>Broca&apos;s aphasia (speech is not fluent and lacks grammar): &quot;<em>I am a sig…no…man…uh, well,…again</em>. These words were emitted slowly, and with great effort. The sounds were not clearly articulated; each syllable was uttered harshly, explosively, in a throaty voice…&quot;</p>
+    <p>Wernicke&apos;s aphasia (inappropriate words): “…<em>I&apos;ve done a lot well, I impose a lot, while, on the other hand, you know what I mean, I have to run around, look it over, trebbin and all that sort of stuff. Oh sure, go ahead, any old think you want. If I could I would. Oh, I&apos;m taking the word the wrong way to say, all of the barbers here whenever they stop you it&apos;s going around and around, if you know what I mean</em>…”</p>
+    <h2>Associated functions</h2>
+    <p>language comprehension</p>
+    <h2>Associated cognitive disorders</h2>
+    <p>Wernicke&apos;s area has not been strongly associated with any cognitive disorders. A small number of papers (e.g. Stephane and colleagues, 2001) report abnormalities in schizophrenic patients but these have not been widely replicated.</p>
+    <h2>Associated with damage</h2>
+    <p>Wernicke&apos;s aphasia (also known as receptive aphasia), which is characterized by inappropriate words and inability to understand spoken language. The major deficit in Wernicke&apos;s aphasia is synchronizing objects and ideas with the words that signify them.</p>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17074486" target="_blank">Osawa and colleagues</a> (2006) report a case study of patient with acquired stuttering that may be caused by damage to Wernicke&apos;s area (Pubmed ID number: 17074486).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/11378315" target="_blank">Stephane and colleagues</a> (2001) review neural correlates of auditory verbal hallucinations, finding evidence of electrophysiological abnormalities in the auditory and speech perception cortices (Pubmed ID number: 11378315).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Wernicke%27s%20Area" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=1233" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/thalamus.swf" label="Thalamus"  moduleIndex="22" startingFrame="64" accessID="thalamus" moduleLevel="1">
+    <h1>The Thalamus</h1>
+    <h2>Overview</h2>
+    <p>The thalamus is heavily involved in relaying information between the cortex and brain stem and within different cortical structures. Because of this role in corticocortical interactions, the thalamus contributes to many processes in the brain including perception, attention, timing, and movement. It plays a central role in alertness and awareness.</p>
+    <h2>Case study</h2>
+    <p>The thalamus connects many different brain areas including the cortex and the cerebellum. A 2007 case study by Ro and colleagues highlights the importance of the thalamus to integrating information from these different areas. They examined a patient with a thalamic lesion that caused synesthesia.  Synesthesia is the blending of sensory experiences, such that people may hear colors or see sounds. In this case, the patient reported a relatively rare form of synesthesia (tactile synesthesia) that caused the patient to “feel sounds.”</p>
+    <h2>Associated functions</h2>
+	<ul>
+      <li>relaying motor and sensory information</li>
+      <li>memory</li>
+      <li>alertness</li>
+      <li>consciousness</li>
+      <li>contributes to perception and cognition</li>
+	</ul>
+    <h2>Associated cognitive disorders</h2>
+    <p>A number of neuroimaging studies show a small but significant reduction in thalamus volume in schizophrenia, which correlates deficits in language, motor, and executive processes (Corsica and colleagues, 2008). It has also been linked to many other cognitive disorders including bipolar disorder, ADHD, Alzheimer&apos;s, autism, and depression.</p>
+    <h2>Associated with damage</h2>
+	<ul>
+      <li>amnesia</li>
+      <li>apathy</li>
+      <li>coma</li>
+      <li>dementia</li>
+      <li>difficulty speaking (aphasia)</li>
+      <li>loss of alertness and activation</li>
+      <li>sleepiness</li>
+      <li>impaired processing of sensory information</li>
+      <li>inattention</li>
+      <li>impaired movements and posture</li>
+      <li>pain</li>
+	</ul>
+    <h2>Research reviews</h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16964255" target="_blank">Cano and colleagues</a> (2006) review the association between the thalamus and alertness (Pubmed ID number: 16964255).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16490411" target="_blank">Carlson and colleagues</a> (2005) review the neurobiology of mood disorders, which includes a discussion of the thalamus (Pubmed ID number: 16490411).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16801643" target="_blank">Carrera and Bogousslavsky</a> (2008) review thalamic stroke, which has been associated with many cognitive and behavioral effects, and which can be sub&#x2013;localized to four different thalamic regions (Pubmed ID number: 16801643).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/18570200" target="_blank">Corsica and colleagues</a> (2008) highlight an association between reduced volume in the thalamus and the onset of schizophrenia (Pubmed ID number: 18570200).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17893864" target="_blank">Ro and colleagues</a> (2007) present a case study of a patient who developed auditory&#x2013;tactile synesthesia after a thalamic lesion (Pubmed ID number: 17893864).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17707635" target="_blank">Sherman</a> (2007) reviews the role played by the thalamus in relating information between neural structures (Pubmed ID number: 17707635).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17118928" target="_blank">Skuse</a> (2006) reviews the genetic influences on the neurobiology of social cognition, with reference to a number of cognitive disorders (Pubmed ID number: 17118928).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Thalamus" target="_blank">Medical Subject Headings</a> (MeSH)
+      </li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=300" target="_blank">BrainInfo</a>
+      </li>
+	</ul>
+  </module>
+  <module sourceSWF="elements/3dbrain/modules/ventricles.swf" label="Ventricles"  moduleIndex="26" startingFrame="64" accessID="ventricles" moduleLevel="1">
+    <h1>The Ventricles</h1>
+    <h2>Overview</h2>
+    <p>The cerebral ventricles are interconnected fluid&#x2013;filled spaces that are extensions of the spinal cord. They have no unique function but provide cushioning against brain damage and are useful landmarks for determining the location of other brain structures.</p>
+    <h2>Case study</h2>
+    <p>A CT&#x2013;imaging study by Johnstone and colleagues (1976) found that patients with schizophrenia have larger ventricles. The study was ground&#x2013;breaking because it was one of the earliest papers to demonstrate a biological underpinning for any psychiatric illness, thereby heralding a new era for cognitive neuroscience. </p>
+    <h2>Associated functions</h2>
+    <p>cushions and protects the brain</p>
+    <h2>Associated cognitive disorders</h2>
+    <p>It has been known for some time that many schizophrenic patients have enlarged ventricles. The same phenomenon has been observed in patients with bipolar disorder (Strasser and colleagues, 2005).</p>
+    <h2>Associated with damage</h2>
+    <p>ventricular enlargement accompanies the progression of dementia and may accelerate toward the end of progression from normal cognitive function to dementia</p>
+    <h2>Substructures</h2>
+	<ul>
+      <li>cerebral aqueduct</li>
+      <li>choroid plexus</li>
+      <li>fourth ventricle</li>
+      <li>lateral ventricle</li>
+      <li>third ventricle</li>
+	</ul>
+    <h2> Research reviews </h2>
+	<ul>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/17334268" target="_blank">Carmichael and colleagues</a> (2007) report that cerebral ventricular changes are associated with transitions from normal cognitive function to dementia. (Pubmed ID number: 17334268).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/14972368" target="_blank">DeLisi and colleagues</a> (2004) examine ventricular changes from onset to 10 years after a schizophrenic episode. (Pubmed ID number: 14972368).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/62160" target="_blank">Johnstone and colleagues</a> (1976) find evidence of enlarged ventricles in patients with schizophrenia (Pubmed ID number: 62160).
+      </li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15780850" target="_blank">Strasser and colleagues</a> (2005) find that bipolar disorder and schizophrenic patients with psychotic symptoms have enlarged ventricles (Pubmed ID number: 15780850).
+      </li>
+	</ul>
+    <h2>Links</h2>
+	<ul>
+      <li><a href="https://meshb.nlm.nih.gov/record/ui?name=Cerebral%20Ventricles" target="_blank">Medical Subject Headings</a> (MeSH)</li>
+      <li><a href="http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=2497" target="_blank">BrainInfo</a> images</li>
+	</ul>
+  </module>
+</data>
+
