@@ -46,33 +46,41 @@ def load_seed_rows() -> list[dict]:
     return FALLBACK_SEED
 
 
-def seed_if_empty():
+def _order_by_parent(rows: list[dict]) -> list[dict]:
+    """Sort so each row's parent (if any) precedes it. FK is not deferred."""
+    inserted: set[str] = set()
+    ordered: list[dict] = []
+    remaining = list(rows)
+    while remaining:
+        progressed = False
+        for row in list(remaining):
+            parent = row.get("parent_id")
+            if parent is None or parent in inserted:
+                ordered.append(row)
+                inserted.add(row["id"])
+                remaining.remove(row)
+                progressed = True
+        if not progressed:
+            ordered.extend(remaining)
+            break
+    return ordered
+
+
+def sync_regions_from_json():
+    """Upsert every region from regions.json into the DB.
+
+    regions.json is the canonical source of truth. Running this on startup
+    means edits to the JSON (new fields like functions/disorders, tweaks to
+    descriptions) always flow through to the DB without a manual migration.
+    There are no user-editable columns today, so merge-overwrite is safe.
+    """
+    rows = load_seed_rows()
+    if not rows:
+        return
+    ordered = _order_by_parent(rows)
     with SessionLocal() as session:
-        has_data = session.execute(select(BrainRegion.id).limit(1)).first()
-        if has_data:
-            return
-        rows = load_seed_rows()
-        # Parents must land before children (FK is not deferred). Sort by
-        # depth: roots (parent_id is None) first, then anything referencing
-        # an already-inserted id, iteratively.
-        inserted: set[str] = set()
-        ordered: list[dict] = []
-        remaining = list(rows)
-        while remaining:
-            progressed = False
-            for row in list(remaining):
-                parent = row.get("parent_id")
-                if parent is None or parent in inserted:
-                    ordered.append(row)
-                    inserted.add(row["id"])
-                    remaining.remove(row)
-                    progressed = True
-            if not progressed:
-                # Dangling parent references — insert the rest anyway and let
-                # the DB surface the error rather than looping forever.
-                ordered.extend(remaining)
-                break
-        session.add_all([BrainRegion(**row) for row in ordered])
+        for row in ordered:
+            session.merge(BrainRegion(**row))
         session.commit()
 
 
@@ -136,7 +144,7 @@ def get_region(region_id: str):
 
 def init_db():
     Base.metadata.create_all(bind=engine)
-    seed_if_empty()
+    sync_regions_from_json()
 
 
 init_db()

@@ -144,7 +144,11 @@ function App() {
             </div>
           </div>
 
-          <RegionInfoPanel region={selectedRegionData} />
+          <RegionInfoPanel
+            region={selectedRegionData}
+            regions={regions}
+            onSelectRegion={setSelectedRegion}
+          />
         </Content>
       </Layout>
     </Layout>

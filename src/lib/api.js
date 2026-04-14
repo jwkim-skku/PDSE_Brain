@@ -4,6 +4,9 @@ const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api
 
 export const api = axios.create({ baseURL: API_BASE })
 
+// Minimal fallback for when the backend is unreachable. Only the shape
+// needs to match; the real content (functions/disorders) comes from
+// backend/data/regions.json via the API.
 const FALLBACK_REGIONS = [
   {
     id: 'frontal_lobe',
@@ -12,40 +15,7 @@ const FALLBACK_REGIONS = [
     parent_id: null,
     mesh_name: 'frontal_lobe',
     color: '#4F8EF7',
-    description: '의사결정, 실행 기능, 운동 계획과 관련된 영역입니다.',
-    functions: [],
-    disorders: []
-  },
-  {
-    id: 'temporal_lobe',
-    name_en: 'Temporal lobe',
-    name_ko: '측두엽',
-    parent_id: null,
-    mesh_name: 'temporal_lobe',
-    color: '#F77F4F',
-    description: '청각 처리, 언어 이해, 기억 형성과 관련된 영역입니다.',
-    functions: [],
-    disorders: []
-  },
-  {
-    id: 'parietal_lobe',
-    name_en: 'Parietal lobe',
-    name_ko: '두정엽',
-    parent_id: null,
-    mesh_name: 'parietal_lobe',
-    color: '#4FD1A1',
-    description: '감각 통합, 공간 인지, 주의 전환과 관련된 영역입니다.',
-    functions: [],
-    disorders: []
-  },
-  {
-    id: 'occipital_lobe',
-    name_en: 'Occipital lobe',
-    name_ko: '후두엽',
-    parent_id: null,
-    mesh_name: 'occipital_lobe',
-    color: '#B94FF7',
-    description: '시각 정보 처리의 핵심 영역입니다.',
+    description: '백엔드 연결 실패 — regions.json 기반 콘텐츠가 로드되지 않았습니다.',
     functions: [],
     disorders: []
   },
@@ -56,7 +26,7 @@ const FALLBACK_REGIONS = [
     parent_id: null,
     mesh_name: 'cerebellum',
     color: '#F7C64F',
-    description: '운동 조절, 균형, 타이밍 정밀도와 관련된 영역입니다.',
+    description: '백엔드 연결 실패 — regions.json 기반 콘텐츠가 로드되지 않았습니다.',
     functions: [],
     disorders: []
   }
