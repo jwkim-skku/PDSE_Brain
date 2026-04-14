@@ -4,51 +4,63 @@ const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api
 
 export const api = axios.create({ baseURL: API_BASE })
 
-export async function fetchExpressionData(params) {
+// Minimal fallback for when the backend is unreachable. Only the shape
+// needs to match; the real content (functions/disorders) comes from
+// backend/data/regions.json via the API.
+const FALLBACK_REGIONS = [
+  {
+    id: 'frontal_lobe',
+    name_en: 'Frontal lobe',
+    name_ko: '전두엽',
+    parent_id: null,
+    mesh_name: 'frontal_lobe',
+    color: '#4F8EF7',
+    description: '백엔드 연결 실패 — regions.json 기반 콘텐츠가 로드되지 않았습니다.',
+    functions: [],
+    disorders: []
+  },
+  {
+    id: 'cerebellum',
+    name_en: 'Cerebellum',
+    name_ko: '소뇌',
+    parent_id: null,
+    mesh_name: 'cerebellum',
+    color: '#F7C64F',
+    description: '백엔드 연결 실패 — regions.json 기반 콘텐츠가 로드되지 않았습니다.',
+    functions: [],
+    disorders: []
+  }
+]
+
+export async function fetchRegions() {
   try {
-    const { data } = await api.get('/expression', { params })
-    return data
+    const { data } = await api.get('/regions')
+    return data.regions ?? []
   } catch {
-    return {
-      records: [
-        { region: 'Frontal lobe', Allen: 542, GTEx: 494, HPA: 338, MANE: 619, NCBI: 455 },
-        { region: 'Temporal lobe', Allen: 417, GTEx: 402, HPA: 291, MANE: 511, NCBI: 389 },
-        { region: 'Parietal lobe', Allen: 309, GTEx: 287, HPA: 251, MANE: 418, NCBI: 300 },
-        { region: 'Occipital lobe', Allen: 288, GTEx: 264, HPA: 244, MANE: 374, NCBI: 278 },
-        { region: 'Cerebellum', Allen: 621, GTEx: 580, HPA: 401, MANE: 690, NCBI: 533 }
-      ]
-    }
+    return FALLBACK_REGIONS
   }
 }
 
-export async function fetchSetData(params) {
+export async function fetchRegion(id) {
   try {
-    const { data } = await api.get('/sets', { params })
+    const { data } = await api.get(`/regions/${id}`)
     return data
   } catch {
-    return {
-      sets: [
-        { sets: ['Allen'], size: 1450 },
-        { sets: ['GTEx'], size: 1320 },
-        { sets: ['HPA'], size: 1170 },
-        { sets: ['MANE'], size: 1660 },
-        { sets: ['NCBI'], size: 1285 },
-        { sets: ['Allen', 'GTEx'], size: 810 },
-        { sets: ['Allen', 'HPA'], size: 694 },
-        { sets: ['GTEx', 'HPA'], size: 676 },
-        { sets: ['MANE', 'NCBI'], size: 902 },
-        { sets: ['Allen', 'GTEx', 'MANE'], size: 552 },
-        { sets: ['Allen', 'GTEx', 'HPA', 'MANE', 'NCBI'], size: 399 }
-      ],
-      venn: [
-        { sets: ['Allen'], size: 1450 },
-        { sets: ['GTEx'], size: 1320 },
-        { sets: ['HPA'], size: 1170 },
-        { sets: ['Allen', 'GTEx'], size: 810 },
-        { sets: ['Allen', 'HPA'], size: 694 },
-        { sets: ['GTEx', 'HPA'], size: 676 },
-        { sets: ['Allen', 'GTEx', 'HPA'], size: 552 }
-      ]
-    }
+    return FALLBACK_REGIONS.find((region) => region.id === id) ?? null
+  }
+}
+
+export async function searchRegions(q) {
+  if (!q) return []
+  try {
+    const { data } = await api.get('/regions/search', { params: { q } })
+    return data.regions ?? []
+  } catch {
+    const needle = q.toLowerCase()
+    return FALLBACK_REGIONS.filter(
+      (region) =>
+        region.name_en.toLowerCase().includes(needle) ||
+        (region.name_ko && region.name_ko.includes(q))
+    )
   }
 }

@@ -1,27 +1,21 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Card, Divider, Layout, List, Space, Tag, Typography } from 'antd'
+import { Card, Divider, Layout, List, Switch, Typography } from 'antd'
 import { BrainScene } from './components/BrainScene'
-import { ControlPanel } from './components/ControlPanel'
-import { ExpressionTable } from './components/ExpressionTable'
+import { LayerControl } from './components/LayerControl'
 import { RegionInfoPanel } from './components/RegionInfoPanel'
-import { SetVisualizations } from './components/SetVisualizations'
-import { fetchExpressionData, fetchSetData } from './lib/api'
+import { RegionSearch } from './components/RegionSearch'
+import { RegionTree } from './components/RegionTree'
+import { fetchRegions } from './lib/api'
+import { getRootRegions } from './lib/regionTree'
 import './App.css'
 
 const { Header, Sider, Content } = Layout
 
 function App() {
-  const [filters, setFilters] = useState({
-    gene: '',
-    databases: ['Allen', 'GTEx', 'HPA', 'MANE', 'NCBI'],
-    aminoAcid: 'Glycine',
-    batchSize: 50,
-    highlightMode: true
-  })
-  const [records, setRecords] = useState([])
-  const [sets, setSets] = useState([])
-  const [vennData, setVennData] = useState([])
-  const [selectedRegion, setSelectedRegion] = useState('Frontal lobe')
+  const [regions, setRegions] = useState([])
+  const [selectedRegion, setSelectedRegion] = useState(null)
+  const [highlightMode, setHighlightMode] = useState(true)
+  const [layerSettings, setLayerSettings] = useState({})
   const [hasModelAsset, setHasModelAsset] = useState(true)
   const [meshDebug, setMeshDebug] = useState({
     source: 'unknown',
@@ -31,18 +25,37 @@ function App() {
   })
 
   useEffect(() => {
-    const run = async () => {
-      const [expression, setResult] = await Promise.all([
-        fetchExpressionData(filters),
-        fetchSetData(filters)
-      ])
-      setRecords(expression.records ?? [])
-      setSets(setResult.sets ?? [])
-      setVennData(setResult.venn ?? [])
+    let cancelled = false
+    fetchRegions().then((rows) => {
+      if (cancelled) return
+      setRegions(rows)
+      if (rows.length > 0) {
+        setSelectedRegion((current) => current ?? rows[0].id)
+      }
+    })
+    return () => {
+      cancelled = true
     }
+  }, [])
 
-    run()
-  }, [filters])
+  // Seed layerSettings with one entry per top-level region so the 3D scene
+  // has a deterministic state for every subtree. New roots added later just
+  // fall back to the default (visible, full opacity).
+  useEffect(() => {
+    const roots = getRootRegions(regions)
+    if (roots.length === 0) return
+    setLayerSettings((prev) => {
+      const next = { ...prev }
+      let changed = false
+      roots.forEach((region) => {
+        if (!next[region.id]) {
+          next[region.id] = { opacity: 1, visible: true }
+          changed = true
+        }
+      })
+      return changed ? next : prev
+    })
+  }, [regions])
 
   useEffect(() => {
     let cancelled = false
@@ -63,14 +76,9 @@ function App() {
     }
   }, [])
 
-  const subtitle = useMemo(() => {
-    const dbLabel = filters.databases.join(', ')
-    return `Gene: ${filters.gene || 'N/A'} | DB: ${dbLabel} | Batch: ${filters.batchSize}`
-  }, [filters])
-
-  const selectedRegionRecord = useMemo(
-    () => records.find((record) => record.region === selectedRegion),
-    [records, selectedRegion]
+  const selectedRegionData = useMemo(
+    () => regions.find((region) => region.id === selectedRegion) ?? null,
+    [regions, selectedRegion]
   )
 
   return (
@@ -79,15 +87,51 @@ function App() {
         <Typography.Title level={2} className="title">
           3D Brain Clone Workspace
         </Typography.Title>
-        <Typography.Text className="subtitle">{subtitle}</Typography.Text>
+        <Typography.Text className="subtitle">
+          선택 영역: {selectedRegionData?.name_en || '없음'}
+        </Typography.Text>
       </Header>
 
       <Layout>
         <Sider width={360} theme="light" className="left-panel">
-          <ControlPanel
-            filters={filters}
-            onChange={(next) => setFilters((current) => ({ ...current, ...next }))}
-          />
+          <Card title="검색" size="small" className="panel-card">
+            <RegionSearch onSelectRegion={setSelectedRegion} />
+          </Card>
+
+          <Divider />
+
+          <Card title="영역 목록" size="small" className="panel-card">
+            {regions.length === 0 ? (
+              <Typography.Text type="secondary">영역을 불러오는 중...</Typography.Text>
+            ) : (
+              <RegionTree
+                regions={regions}
+                selectedRegion={selectedRegion}
+                onSelectRegion={setSelectedRegion}
+              />
+            )}
+          </Card>
+
+          <Divider />
+
+          <Card title="레이어" size="small" className="panel-card">
+            <LayerControl
+              regions={regions}
+              layerSettings={layerSettings}
+              onChange={setLayerSettings}
+            />
+          </Card>
+
+          <Divider />
+
+          <Card title="표시 옵션" size="small" className="panel-card">
+            <Typography.Text>3D 강조 모드</Typography.Text>
+            <Switch
+              checked={highlightMode}
+              onChange={setHighlightMode}
+              style={{ marginLeft: 12 }}
+            />
+          </Card>
 
           <Divider />
           {!hasModelAsset && (
@@ -95,13 +139,6 @@ function App() {
               public/models/brain_regions.glb 파일이 없어 임시 뷰로 동작 중입니다.
             </Typography.Text>
           )}
-          <Space wrap>
-            {filters.databases.map((db) => (
-              <Tag key={db} color="blue">
-                {db}
-              </Tag>
-            ))}
-          </Space>
 
           <Divider />
           <Card title="Mesh 매핑 디버그" size="small" className="panel-card mesh-debug-card">
@@ -131,24 +168,25 @@ function App() {
         <Content className="content-panel">
           <div className="brain-viewport" aria-label="3D brain viewport">
             <BrainScene
+              regions={regions}
               selectedRegion={selectedRegion}
               onSelectRegion={setSelectedRegion}
-              highlightMode={filters.highlightMode}
+              highlightMode={highlightMode}
+              layerSettings={layerSettings}
               onMeshDebugChange={setMeshDebug}
             />
             <div className="overlay-card">
               <Typography.Title level={4}>3D Brain Viewport</Typography.Title>
               <Typography.Paragraph>
-                클릭으로 영역을 선택할 수 있습니다. 현재 선택된 영역은 <b>{selectedRegion}</b> 입니다.
+                클릭으로 영역을 선택할 수 있습니다. 현재 선택된 영역은{' '}
+                <b>{selectedRegionData?.name_en || '없음'}</b> 입니다.
               </Typography.Paragraph>
             </div>
           </div>
 
-          <RegionInfoPanel selectedRegion={selectedRegion} regionRecord={selectedRegionRecord} />
-          <SetVisualizations sets={sets} vennData={vennData} />
-          <ExpressionTable
-            records={records}
-            selectedRegion={selectedRegion}
+          <RegionInfoPanel
+            region={selectedRegionData}
+            regions={regions}
             onSelectRegion={setSelectedRegion}
           />
         </Content>

@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Mesh pipeline — raw inputs and generated GLB are not committed
+backend/data/raw_meshes/*.obj
+backend/data/raw_meshes/*.stl
+backend/data/raw_meshes/*.ply
+public/models/*.glb
