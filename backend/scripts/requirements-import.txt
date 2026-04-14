@@ -1,0 +1,6 @@
+# Dev-time only: mesh import pipeline for backend/scripts/import_meshes.py.
+# Kept separate from backend/requirements.txt so the runtime image stays slim.
+trimesh>=4.0
+numpy>=1.26
+# trimesh uses pyglet for scene ops and may pull pillow via GLB texture paths.
+pillow>=10.0

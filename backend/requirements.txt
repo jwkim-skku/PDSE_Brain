@@ -3,4 +3,3 @@ Flask-Cors
 SQLAlchemy
 psycopg2-binary
 python-dotenv
-biopython

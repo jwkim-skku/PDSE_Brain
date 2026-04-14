@@ -1,3 +1,6 @@
+import json
+from pathlib import Path
+
 from flask import Flask, abort, jsonify, request
 from flask_cors import CORS
 from sqlalchemy import or_, select
@@ -9,9 +12,12 @@ app = Flask(__name__)
 CORS(app)
 
 
-# Minimal seed set — placeholder until M2 (Allen CCFv3 import).
-# Content intentionally generic; real descriptions/disorders to be added in M6.
-SEED_REGIONS = [
+REGIONS_JSON = Path(__file__).resolve().parents[1] / "data" / "regions.json"
+
+# Fallback seed used if regions.json is missing (e.g. fresh checkout without
+# data files). The canonical source is backend/data/regions.json; edits should
+# go there so the import pipeline and the DB stay in sync.
+FALLBACK_SEED = [
     {
         "id": "frontal_lobe",
         "name_en": "Frontal lobe",
@@ -19,30 +25,7 @@ SEED_REGIONS = [
         "parent_id": None,
         "mesh_name": "frontal_lobe",
         "color": "#4F8EF7",
-    },
-    {
-        "id": "temporal_lobe",
-        "name_en": "Temporal lobe",
-        "name_ko": "측두엽",
-        "parent_id": None,
-        "mesh_name": "temporal_lobe",
-        "color": "#F77F4F",
-    },
-    {
-        "id": "parietal_lobe",
-        "name_en": "Parietal lobe",
-        "name_ko": "두정엽",
-        "parent_id": None,
-        "mesh_name": "parietal_lobe",
-        "color": "#4FD1A1",
-    },
-    {
-        "id": "occipital_lobe",
-        "name_en": "Occipital lobe",
-        "name_ko": "후두엽",
-        "parent_id": None,
-        "mesh_name": "occipital_lobe",
-        "color": "#B94FF7",
+        "description": None,
     },
     {
         "id": "cerebellum",
@@ -51,8 +34,16 @@ SEED_REGIONS = [
         "parent_id": None,
         "mesh_name": "cerebellum",
         "color": "#F7C64F",
+        "description": None,
     },
 ]
+
+
+def load_seed_rows() -> list[dict]:
+    if REGIONS_JSON.exists():
+        with REGIONS_JSON.open(encoding="utf-8") as fp:
+            return json.load(fp)
+    return FALLBACK_SEED
 
 
 def seed_if_empty():
@@ -60,7 +51,28 @@ def seed_if_empty():
         has_data = session.execute(select(BrainRegion.id).limit(1)).first()
         if has_data:
             return
-        session.add_all([BrainRegion(**row) for row in SEED_REGIONS])
+        rows = load_seed_rows()
+        # Parents must land before children (FK is not deferred). Sort by
+        # depth: roots (parent_id is None) first, then anything referencing
+        # an already-inserted id, iteratively.
+        inserted: set[str] = set()
+        ordered: list[dict] = []
+        remaining = list(rows)
+        while remaining:
+            progressed = False
+            for row in list(remaining):
+                parent = row.get("parent_id")
+                if parent is None or parent in inserted:
+                    ordered.append(row)
+                    inserted.add(row["id"])
+                    remaining.remove(row)
+                    progressed = True
+            if not progressed:
+                # Dangling parent references — insert the rest anyway and let
+                # the DB surface the error rather than looping forever.
+                ordered.extend(remaining)
+                break
+        session.add_all([BrainRegion(**row) for row in ordered])
         session.commit()
 
 
