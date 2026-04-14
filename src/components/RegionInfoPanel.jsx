@@ -1,35 +1,50 @@
-import { Card, Col, Descriptions, Row, Tag, Typography } from 'antd'
-import { BRAIN_REGIONS } from '../data/brainRegions'
+import { Card, Descriptions, Tag, Typography } from 'antd'
 
-export function RegionInfoPanel({ selectedRegion, regionRecord }) {
-  const info = BRAIN_REGIONS.find((region) => region.key === selectedRegion)
+export function RegionInfoPanel({ region }) {
+  if (!region) {
+    return (
+      <Card title="선택 영역 상세 정보" size="small" className="panel-card">
+        <Typography.Text type="secondary">영역을 선택하면 정보가 표시됩니다.</Typography.Text>
+      </Card>
+    )
+  }
 
   return (
     <Card title="선택 영역 상세 정보" size="small" className="panel-card">
       <Typography.Title level={5} style={{ marginTop: 0 }}>
-        {selectedRegion}
+        {region.name_en}
+        {region.name_ko ? ` (${region.name_ko})` : ''}
       </Typography.Title>
       <Typography.Paragraph type="secondary" style={{ marginBottom: 12 }}>
-        {info?.description ?? '해당 영역 설명이 없습니다.'}
+        {region.description || '설명이 아직 등록되지 않았습니다.'}
       </Typography.Paragraph>
 
-      <Row gutter={[8, 8]} style={{ marginBottom: 12 }}>
-        {['Allen', 'GTEx', 'HPA', 'MANE', 'NCBI'].map((db) => (
-          <Col key={db}>
-            <Tag color="geekblue">
-              {db}: {regionRecord?.[db] ?? 0}
-            </Tag>
-          </Col>
-        ))}
-      </Row>
+      {region.functions?.length > 0 && (
+        <div style={{ marginBottom: 12 }}>
+          <Typography.Text strong>기능: </Typography.Text>
+          {region.functions.map((f) => (
+            <Tag key={f} color="blue">{f}</Tag>
+          ))}
+        </div>
+      )}
+
+      {region.disorders?.length > 0 && (
+        <div style={{ marginBottom: 12 }}>
+          <Typography.Text strong>관련 질환: </Typography.Text>
+          {region.disorders.map((d) => (
+            <Tag key={d} color="red">{d}</Tag>
+          ))}
+        </div>
+      )}
 
       <Descriptions bordered size="small" column={1}>
-        <Descriptions.Item label="Region">{selectedRegion}</Descriptions.Item>
-        <Descriptions.Item label="Allen">{regionRecord?.Allen ?? 0}</Descriptions.Item>
-        <Descriptions.Item label="GTEx">{regionRecord?.GTEx ?? 0}</Descriptions.Item>
-        <Descriptions.Item label="HPA">{regionRecord?.HPA ?? 0}</Descriptions.Item>
-        <Descriptions.Item label="MANE">{regionRecord?.MANE ?? 0}</Descriptions.Item>
-        <Descriptions.Item label="NCBI">{regionRecord?.NCBI ?? 0}</Descriptions.Item>
+        <Descriptions.Item label="ID">{region.id}</Descriptions.Item>
+        {region.parent_id && (
+          <Descriptions.Item label="Parent">{region.parent_id}</Descriptions.Item>
+        )}
+        {region.mesh_name && (
+          <Descriptions.Item label="Mesh">{region.mesh_name}</Descriptions.Item>
+        )}
       </Descriptions>
     </Card>
   )

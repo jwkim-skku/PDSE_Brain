@@ -1,15 +1,18 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String, Text
+from sqlalchemy.dialects.postgresql import ARRAY
 
 from .db import Base
 
 
-class ExpressionRecord(Base):
-    __tablename__ = "expression_records"
+class BrainRegion(Base):
+    __tablename__ = "brain_regions"
 
-    id = Column(Integer, primary_key=True, index=True)
-    region = Column(String(100), nullable=False)
-    allen = Column(Integer, default=0)
-    gtex = Column(Integer, default=0)
-    hpa = Column(Integer, default=0)
-    mane = Column(Integer, default=0)
-    ncbi = Column(Integer, default=0)
+    id = Column(String(64), primary_key=True)
+    name_en = Column(String(200), nullable=False)
+    name_ko = Column(String(200), nullable=True)
+    parent_id = Column(String(64), ForeignKey("brain_regions.id"), nullable=True)
+    mesh_name = Column(String(200), nullable=True, index=True)
+    color = Column(String(16), nullable=True)
+    description = Column(Text, nullable=True)
+    functions = Column(ARRAY(String), nullable=True)
+    disorders = Column(ARRAY(String), nullable=True)
