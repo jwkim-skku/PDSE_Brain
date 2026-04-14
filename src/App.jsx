@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Card, Divider, Layout, List, Switch, Typography } from 'antd'
 import { BrainScene } from './components/BrainScene'
 import { RegionInfoPanel } from './components/RegionInfoPanel'
+import { RegionTree } from './components/RegionTree'
 import { fetchRegions } from './lib/api'
 import './App.css'
 
@@ -71,25 +72,15 @@ function App() {
       <Layout>
         <Sider width={360} theme="light" className="left-panel">
           <Card title="영역 목록" size="small" className="panel-card">
-            <List
-              size="small"
-              dataSource={regions}
-              locale={{ emptyText: '영역을 불러오는 중...' }}
-              renderItem={(region) => (
-                <List.Item
-                  onClick={() => setSelectedRegion(region.id)}
-                  style={{
-                    cursor: 'pointer',
-                    background: region.id === selectedRegion ? '#e6f4ff' : 'transparent'
-                  }}
-                >
-                  <Typography.Text strong>{region.name_en}</Typography.Text>
-                  {region.name_ko && (
-                    <Typography.Text type="secondary"> ({region.name_ko})</Typography.Text>
-                  )}
-                </List.Item>
-              )}
-            />
+            {regions.length === 0 ? (
+              <Typography.Text type="secondary">영역을 불러오는 중...</Typography.Text>
+            ) : (
+              <RegionTree
+                regions={regions}
+                selectedRegion={selectedRegion}
+                onSelectRegion={setSelectedRegion}
+              />
+            )}
           </Card>
 
           <Divider />
