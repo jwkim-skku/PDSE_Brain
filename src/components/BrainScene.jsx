@@ -4,6 +4,7 @@ import { Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Component } from 'react'
 import { Box3, Vector3 } from 'three'
 import { mapNodeNameToRegion } from '../data/brainRegions'
+import { buildRootMap } from '../lib/regionTree'
 
 const MODEL_URL = '/models/brain_regions.glb'
 const defaultColor = '#9ca3af'
@@ -16,7 +17,7 @@ const fallbackRegions = [
   { id: 'cerebellum', position: [-0.75, -0.7, 0.35], scale: [0.75, 0.55, 0.65], focus: [-0.75, -0.7, 0.35] }
 ]
 
-function applyRegionMaterial(node, selectedRegion, highlightMode, colorMap) {
+function applyRegionMaterial(node, selectedRegion, highlightMode, colorMap, layerState) {
   const regionId = node.userData.region
   const baseColor = (regionId && colorMap[regionId]) || defaultColor
   const isSelected = regionId && selectedRegion === regionId
@@ -24,9 +25,13 @@ function applyRegionMaterial(node, selectedRegion, highlightMode, colorMap) {
   if (!node.material) {
     return
   }
+  const { visible = true, opacity: layerOpacity = 1 } = layerState || {}
+  node.visible = visible
+
   node.material.color.set(baseColor)
   node.material.transparent = true
-  node.material.opacity = isSelected && highlightMode ? 1 : 0.82
+  const baseOpacity = isSelected && highlightMode ? 1 : 0.82
+  node.material.opacity = baseOpacity * layerOpacity
   node.material.roughness = 0.35
   node.material.metalness = 0.12
   node.material.emissive.set(isSelected && highlightMode ? baseColor : '#000000')
@@ -38,6 +43,7 @@ function BrainModel({
   selectedRegion,
   onSelectRegion,
   highlightMode,
+  layerSettings,
   onMeshDebugChange,
   onRegionCentersChange
 }) {
@@ -51,6 +57,8 @@ function BrainModel({
     })
     return map
   }, [regions])
+
+  const rootMap = useMemo(() => buildRootMap(regions), [regions])
 
   useEffect(() => {
     const recognizedMeshes = []
@@ -109,10 +117,13 @@ function BrainModel({
   useEffect(() => {
     root.traverse((node) => {
       if (node.isMesh) {
-        applyRegionMaterial(node, selectedRegion, highlightMode, colorMap)
+        const regionId = node.userData.region
+        const rootId = regionId ? rootMap.get(regionId) : null
+        const layerState = rootId ? layerSettings?.[rootId] : null
+        applyRegionMaterial(node, selectedRegion, highlightMode, colorMap, layerState)
       }
     })
-  }, [colorMap, highlightMode, root, selectedRegion])
+  }, [colorMap, highlightMode, layerSettings, root, rootMap, selectedRegion])
 
   return (
     <primitive
@@ -143,6 +154,7 @@ function FallbackBrain({
   selectedRegion,
   onSelectRegion,
   highlightMode,
+  layerSettings,
   onMeshDebugChange,
   onRegionCentersChange
 }) {
@@ -153,6 +165,8 @@ function FallbackBrain({
     })
     return map
   }, [regions])
+
+  const rootMap = useMemo(() => buildRootMap(regions), [regions])
 
   useEffect(() => {
     const centers = {}
@@ -173,6 +187,10 @@ function FallbackBrain({
       {fallbackRegions.map((region) => {
         const isSelected = selectedRegion === region.id
         const color = colorMap[region.id] || defaultColor
+        const rootId = rootMap.get(region.id) ?? region.id
+        const layer = layerSettings?.[rootId] ?? { opacity: 1, visible: true }
+        if (!layer.visible) return null
+        const baseOpacity = isSelected && highlightMode ? 1 : 0.82
         return (
           <mesh
             key={region.id}
@@ -189,7 +207,7 @@ function FallbackBrain({
             <meshStandardMaterial
               color={color}
               transparent
-              opacity={isSelected && highlightMode ? 1 : 0.82}
+              opacity={baseOpacity * layer.opacity}
               emissive={isSelected && highlightMode ? color : '#000000'}
               emissiveIntensity={isSelected && highlightMode ? 0.32 : 0}
             />
@@ -237,7 +255,14 @@ function CameraRig({ selectedRegion, regionCenters, controlsRef }) {
   return null
 }
 
-export function BrainScene({ regions, selectedRegion, onSelectRegion, highlightMode, onMeshDebugChange }) {
+export function BrainScene({
+  regions,
+  selectedRegion,
+  onSelectRegion,
+  highlightMode,
+  layerSettings,
+  onMeshDebugChange
+}) {
   const controlsRef = useRef(null)
   const [regionCenters, setRegionCenters] = useState({})
 
@@ -256,6 +281,7 @@ export function BrainScene({ regions, selectedRegion, onSelectRegion, highlightM
               selectedRegion={selectedRegion}
               onSelectRegion={onSelectRegion}
               highlightMode={highlightMode}
+              layerSettings={layerSettings}
               onMeshDebugChange={onMeshDebugChange}
               onRegionCentersChange={setRegionCenters}
             />
@@ -266,6 +292,7 @@ export function BrainScene({ regions, selectedRegion, onSelectRegion, highlightM
             selectedRegion={selectedRegion}
             onSelectRegion={onSelectRegion}
             highlightMode={highlightMode}
+            layerSettings={layerSettings}
             onMeshDebugChange={onMeshDebugChange}
             onRegionCentersChange={setRegionCenters}
           />

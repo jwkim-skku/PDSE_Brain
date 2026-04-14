@@ -1,9 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Card, Divider, Layout, List, Switch, Typography } from 'antd'
 import { BrainScene } from './components/BrainScene'
+import { LayerControl } from './components/LayerControl'
 import { RegionInfoPanel } from './components/RegionInfoPanel'
+import { RegionSearch } from './components/RegionSearch'
 import { RegionTree } from './components/RegionTree'
 import { fetchRegions } from './lib/api'
+import { getRootRegions } from './lib/regionTree'
 import './App.css'
 
 const { Header, Sider, Content } = Layout
@@ -12,6 +15,7 @@ function App() {
   const [regions, setRegions] = useState([])
   const [selectedRegion, setSelectedRegion] = useState(null)
   const [highlightMode, setHighlightMode] = useState(true)
+  const [layerSettings, setLayerSettings] = useState({})
   const [hasModelAsset, setHasModelAsset] = useState(true)
   const [meshDebug, setMeshDebug] = useState({
     source: 'unknown',
@@ -33,6 +37,25 @@ function App() {
       cancelled = true
     }
   }, [])
+
+  // Seed layerSettings with one entry per top-level region so the 3D scene
+  // has a deterministic state for every subtree. New roots added later just
+  // fall back to the default (visible, full opacity).
+  useEffect(() => {
+    const roots = getRootRegions(regions)
+    if (roots.length === 0) return
+    setLayerSettings((prev) => {
+      const next = { ...prev }
+      let changed = false
+      roots.forEach((region) => {
+        if (!next[region.id]) {
+          next[region.id] = { opacity: 1, visible: true }
+          changed = true
+        }
+      })
+      return changed ? next : prev
+    })
+  }, [regions])
 
   useEffect(() => {
     let cancelled = false
@@ -71,6 +94,12 @@ function App() {
 
       <Layout>
         <Sider width={360} theme="light" className="left-panel">
+          <Card title="검색" size="small" className="panel-card">
+            <RegionSearch onSelectRegion={setSelectedRegion} />
+          </Card>
+
+          <Divider />
+
           <Card title="영역 목록" size="small" className="panel-card">
             {regions.length === 0 ? (
               <Typography.Text type="secondary">영역을 불러오는 중...</Typography.Text>
@@ -81,6 +110,16 @@ function App() {
                 onSelectRegion={setSelectedRegion}
               />
             )}
+          </Card>
+
+          <Divider />
+
+          <Card title="레이어" size="small" className="panel-card">
+            <LayerControl
+              regions={regions}
+              layerSettings={layerSettings}
+              onChange={setLayerSettings}
+            />
           </Card>
 
           <Divider />
@@ -133,6 +172,7 @@ function App() {
               selectedRegion={selectedRegion}
               onSelectRegion={setSelectedRegion}
               highlightMode={highlightMode}
+              layerSettings={layerSettings}
               onMeshDebugChange={setMeshDebug}
             />
             <div className="overlay-card">
