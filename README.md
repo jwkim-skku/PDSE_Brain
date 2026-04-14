@@ -1,18 +1,47 @@
-# React + Vite
+# 3D Brain Clone (B Plan)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+`http://www.g2conline.org/3dbrain/`를 기준으로, 동일 콘셉트 UI와 생물정보 집합 분석 워크플로우를
+재구현하는 프로젝트입니다.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Frontend: React, Vite, AntD, UpSetJS, VennDiagram, aminoAcidList
+- Backend: Flask, SQLAlchemy, PostgreSQL, Biopython Entrez
+- Orchestration: Docker Compose
+- Analysis script: R
 
-## React Compiler
+## Run (Docker Compose)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+```bash
+docker compose up --build
+```
 
-Note: This will impact Vite dev & build performances.
+- Frontend: `http://localhost:5173`
+- Backend API: `http://localhost:5000/api/health`
 
-## Expanding the ESLint configuration
+## Run (Local Frontend only)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+API가 없으면 프론트는 mock 데이터로 동작합니다.
+
+## 3D Brain GLB/GLTF model
+
+- 모델 파일 위치: `public/models/brain_regions.glb`
+- 파일 내부 mesh 이름은 아래 키워드 중 하나를 포함하면 자동 매핑됩니다.
+  - frontal, temporal, parietal, occipital, cerebellum
+- 매핑에 성공하면 클릭 시 영역 선택 + 상세 패널 동기화가 동작합니다.
+
+## Backend ETL scripts
+
+- NCBI batch(기본 50) 수집: `backend/scripts/fetch_ncbi.py`
+- UpSet 전처리 R 스크립트: `backend/scripts/upset_prep.R`
+
+환경변수 예시:
+
+- `ENTREZ_EMAIL`
+- `ENTREZ_TOOL`
+- `NCBI_BATCH_SIZE=50`

@@ -1,0 +1,22 @@
+export const aminoAcidList = [
+  'Alanine',
+  'Arginine',
+  'Asparagine',
+  'Aspartic acid',
+  'Cysteine',
+  'Glutamic acid',
+  'Glutamine',
+  'Glycine',
+  'Histidine',
+  'Isoleucine',
+  'Leucine',
+  'Lysine',
+  'Methionine',
+  'Phenylalanine',
+  'Proline',
+  'Serine',
+  'Threonine',
+  'Tryptophan',
+  'Tyrosine',
+  'Valine'
+]

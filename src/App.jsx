@@ -1,120 +1,128 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useEffect, useMemo, useState } from 'react'
+import { Divider, Layout, Space, Tag, Typography } from 'antd'
+import { BrainScene } from './components/BrainScene'
+import { ControlPanel } from './components/ControlPanel'
+import { ExpressionTable } from './components/ExpressionTable'
+import { RegionInfoPanel } from './components/RegionInfoPanel'
+import { SetVisualizations } from './components/SetVisualizations'
+import { fetchExpressionData, fetchSetData } from './lib/api'
 import './App.css'
 
+const { Header, Sider, Content } = Layout
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [filters, setFilters] = useState({
+    gene: '',
+    databases: ['Allen', 'GTEx', 'HPA', 'MANE', 'NCBI'],
+    aminoAcid: 'Glycine',
+    batchSize: 50,
+    highlightMode: true
+  })
+  const [records, setRecords] = useState([])
+  const [sets, setSets] = useState([])
+  const [vennData, setVennData] = useState([])
+  const [selectedRegion, setSelectedRegion] = useState('Frontal lobe')
+  const [hasModelAsset, setHasModelAsset] = useState(true)
+
+  useEffect(() => {
+    const run = async () => {
+      const [expression, setResult] = await Promise.all([
+        fetchExpressionData(filters),
+        fetchSetData(filters)
+      ])
+      setRecords(expression.records ?? [])
+      setSets(setResult.sets ?? [])
+      setVennData(setResult.venn ?? [])
+    }
+
+    run()
+  }, [filters])
+
+  useEffect(() => {
+    let cancelled = false
+    fetch('/models/brain_regions.glb', { method: 'HEAD' })
+      .then((response) => {
+        if (!cancelled) {
+          setHasModelAsset(response.ok)
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setHasModelAsset(false)
+        }
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  const subtitle = useMemo(() => {
+    const dbLabel = filters.databases.join(', ')
+    return `Gene: ${filters.gene || 'N/A'} | DB: ${dbLabel} | Batch: ${filters.batchSize}`
+  }, [filters])
+
+  const selectedRegionRecord = useMemo(
+    () => records.find((record) => record.region === selectedRegion),
+    [records, selectedRegion]
+  )
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <Layout className="page-root">
+      <Header className="brain-header">
+        <Typography.Title level={2} className="title">
+          3D Brain Clone Workspace
+        </Typography.Title>
+        <Typography.Text className="subtitle">{subtitle}</Typography.Text>
+      </Header>
 
-      <div className="ticks"></div>
+      <Layout>
+        <Sider width={360} theme="light" className="left-panel">
+          <ControlPanel
+            filters={filters}
+            onChange={(next) => setFilters((current) => ({ ...current, ...next }))}
+          />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+          <Divider />
+          {!hasModelAsset && (
+            <Typography.Text type="warning">
+              public/models/brain_regions.glb 파일이 없어 임시 뷰로 동작 중입니다.
+            </Typography.Text>
+          )}
+          <Space wrap>
+            {filters.databases.map((db) => (
+              <Tag key={db} color="blue">
+                {db}
+              </Tag>
+            ))}
+          </Space>
+        </Sider>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+        <Content className="content-panel">
+          <div className="brain-viewport" aria-label="3D brain viewport">
+            <BrainScene
+              selectedRegion={selectedRegion}
+              onSelectRegion={setSelectedRegion}
+              highlightMode={filters.highlightMode}
+            />
+            <div className="overlay-card">
+              <Typography.Title level={4}>3D Brain Viewport</Typography.Title>
+              <Typography.Paragraph>
+                클릭으로 영역을 선택할 수 있습니다. 현재 선택된 영역은 <b>{selectedRegion}</b> 입니다.
+              </Typography.Paragraph>
+            </div>
+          </div>
+
+          <RegionInfoPanel selectedRegion={selectedRegion} regionRecord={selectedRegionRecord} />
+          <SetVisualizations sets={sets} vennData={vennData} />
+          <ExpressionTable
+            records={records}
+            selectedRegion={selectedRegion}
+            onSelectRegion={setSelectedRegion}
+          />
+        </Content>
+      </Layout>
+    </Layout>
   )
 }
 
