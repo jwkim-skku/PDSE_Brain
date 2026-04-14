@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Divider, Layout, Space, Tag, Typography } from 'antd'
+import { Card, Divider, Layout, List, Space, Tag, Typography } from 'antd'
 import { BrainScene } from './components/BrainScene'
 import { ControlPanel } from './components/ControlPanel'
 import { ExpressionTable } from './components/ExpressionTable'
@@ -23,6 +23,12 @@ function App() {
   const [vennData, setVennData] = useState([])
   const [selectedRegion, setSelectedRegion] = useState('Frontal lobe')
   const [hasModelAsset, setHasModelAsset] = useState(true)
+  const [meshDebug, setMeshDebug] = useState({
+    source: 'unknown',
+    totalMeshes: 0,
+    recognizedMeshes: [],
+    unmappedMeshes: []
+  })
 
   useEffect(() => {
     const run = async () => {
@@ -96,6 +102,30 @@ function App() {
               </Tag>
             ))}
           </Space>
+
+          <Divider />
+          <Card title="Mesh 매핑 디버그" size="small" className="panel-card mesh-debug-card">
+            <Typography.Text>
+              source: <b>{meshDebug.source}</b>
+            </Typography.Text>
+            <br />
+            <Typography.Text>
+              mapped: <b>{meshDebug.recognizedMeshes.length}</b> / total: <b>{meshDebug.totalMeshes}</b>
+            </Typography.Text>
+
+            <List
+              size="small"
+              className="mesh-list"
+              header="인식된 mesh -> region"
+              dataSource={meshDebug.recognizedMeshes}
+              locale={{ emptyText: '인식된 mesh 없음' }}
+              renderItem={(item) => (
+                <List.Item>
+                  <Typography.Text code>{item.meshName}</Typography.Text> {'->'} {item.region}
+                </List.Item>
+              )}
+            />
+          </Card>
         </Sider>
 
         <Content className="content-panel">
@@ -104,6 +134,7 @@ function App() {
               selectedRegion={selectedRegion}
               onSelectRegion={setSelectedRegion}
               highlightMode={filters.highlightMode}
+              onMeshDebugChange={setMeshDebug}
             />
             <div className="overlay-card">
               <Typography.Title level={4}>3D Brain Viewport</Typography.Title>
